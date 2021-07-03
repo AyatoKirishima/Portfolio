@@ -17,3 +17,9 @@ http://jsfiddle.net/AUsnL/
 
 Génération animations texte :
 https://animista.net
+
+Tas de ressources + effets HTML CSS JS ...ect : 
+https://freefrontend.com
+
+Templates + animations : 
+https://tympanus.net/codrops/2020/06/10/how-to-create-a-motion-hover-effect-for-a-background-image-grid/
