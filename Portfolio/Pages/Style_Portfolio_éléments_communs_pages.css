@@ -1,15 +1,16 @@
 /* Barre de navigation */
+
 #menu {
     list-style-type: none;
     top: 0;
     left: 0;
-    right : 0;
+    right: 0;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #333;
     position: fixed;
-    width: 100%; 
+    width: 100%;
 }
 
 .menu {
@@ -19,6 +20,10 @@
     padding: 14px 16px;
     text-decoration: none;
     float: left;
+}
+
+.test:hover:not(.active) {
+    background-color: #111;
 }
 
 .active {
