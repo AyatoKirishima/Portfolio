@@ -124,8 +124,8 @@ a:hover, a:focus {
 .frame_corner {
 	position: absolute;
 	z-index: 10;
-	left: 25px;
-	bottom: 25px;
+	left: 35px;
+	bottom: 35px;
 	opacity: 0.8;
 }
 
