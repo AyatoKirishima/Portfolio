@@ -17,14 +17,14 @@ body {
 	margin: 0;
 	--color-text: rgb(130, 255, 130);
 	--color-bg: #0c0c0c;
-	--color-link: #9bdfa4;
+	--color-link: rgb(176, 253, 186);
 	--color-link-hover: #fff;
 	--color-content-title-sub: rgb(176, 253, 186);
 	color: var(--color-text);
 	background-color: var(--color-bg);
-	--cursor-stroke: #6b5537;
+	--cursor-stroke: rgb(176, 253, 186);
 	--cursor-fill: none;
-	--cursor-stroke-width: 1px;
+	--cursor-stroke-width: 1.5px;
 	font-family: bilo, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;

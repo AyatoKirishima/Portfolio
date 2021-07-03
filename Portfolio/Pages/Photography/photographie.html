@@ -18,11 +18,11 @@ var supportsCssVars = function supportsCssVars() {
   return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e;
 };
 
-supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+supportsCssVars() || alert("Please view this in a modern browser that supports CSS Variables.");</script>
 	</head>
 	<body class="demo-1 loading">
 		<main>
-			<div class="message">Please view this demo on a desktop to see the effect.</div>
+			<div class="message">Visionnez cette page sur ordinateur pour un meilleur rendu</div>
 			<div class="frame">
 				<div class="frame__title-wrap">
 					<h1 class="frame__title">Photographies d'insectes</h1>
@@ -59,7 +59,7 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
 			</div>
 		</main>
         <svg class="cursor" width="80" height="80" viewBox="0 0 80 80">
-			<circle class="cursor__inner" cx="40" cy="40" r="20"></circle>
+			<circle class="cursor__inner" cx="20" cy="20" r="10"></circle>
 		</svg>
 		<script src="photographie.js"></script>
 	</body>
