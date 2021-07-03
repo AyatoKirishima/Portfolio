@@ -1,5 +1,16 @@
 /* Barre de navigation */
 
+#navbar {
+    /* Make it stick/fixed */
+    position: fixed;
+    /* Hide the navbar 50 px outside of the top view */
+    top: -50px;
+    /* Full width */
+    width: 100%;
+    /* Transition effect when sliding down (and up) */
+    transition: top 0.3s;
+}
+
 #menu {
     list-style-type: none;
     top: 0;
@@ -35,12 +46,11 @@
 
 #footer {
     background-color: #333;
-    color : white;
+    color: white;
     text-align: center;
     height: 200px;
     bottom: 0;
 }
-
 
 /* Général */
 
