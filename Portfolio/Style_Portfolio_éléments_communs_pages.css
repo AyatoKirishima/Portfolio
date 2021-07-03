@@ -25,3 +25,8 @@ li a:hover:not(.active) {
 .active {
     background-color: #4CAF50;
 }
+
+.body {
+    margin : 0;
+    padding : 0;
+}
