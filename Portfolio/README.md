@@ -14,3 +14,6 @@ https://codepen.io/kay8/pen/azKbjN
 
 Parcourir un blanc, une barre et une image en scroll :
 http://jsfiddle.net/AUsnL/
+
+Génération animations texte :
+https://animista.net
