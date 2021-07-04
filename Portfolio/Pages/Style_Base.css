@@ -1,3 +1,9 @@
+/* Général */
+
+body {
+    margin: 0px;
+}
+
 /* Barre de navigation */
 
 #navbar {
@@ -52,8 +58,4 @@
     bottom: 0;
 }
 
-/* Général */
-
-body {
-    margin: 0px;
-}
+/* Bannière */
