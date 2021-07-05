@@ -248,10 +248,10 @@ html {
     animation-delay: 0.8s;
 }
 
-/* Line Motion */
+/* Line Motion : Has a lot of bugs so .... :/
 
 .line {
-    width: 10000px;
+    width: ;
     height: 2px;
     background: cyan;
     position: absolute;
@@ -281,7 +281,7 @@ html {
     0% {
         left: 0;
     }
-}
+} */
 
 /* Footer */
 
