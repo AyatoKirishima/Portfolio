@@ -51,6 +51,11 @@ html {
     background-color: #111;
 }
 
+.test:hover {
+    text-decoration: none;
+    color: white;
+}
+
 .active {
     background-color: #4a9c98;
 }
