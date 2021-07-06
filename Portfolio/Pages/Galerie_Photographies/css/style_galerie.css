@@ -7,6 +7,21 @@ body {
     padding: 40px 0 0 0;
 }
 
+/* Font */
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('../../Font/BebasNeue-Regular.woff2') format('woff2'),
+        url('../../Font/BebasNeue-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.bebas {
+    font-family: 'Bebas Neue';
+    font-size: 45px;
+}
+
 /* Vidéo de Fond
 Consomme trop de puissance pour rien :/
 
@@ -79,8 +94,6 @@ video {
 .gallery-container h1 {
     text-align: center;
     margin-top: 50px;
-    font-family: 'Droid Sans', sans-serif;
-    font-weight: bold;
 }
 
 .gallery-container p.page-description {
