@@ -41,3 +41,11 @@ https://www.guyom-design.com/blog/astuces/css/tuto_diapo_css/#!
 #### Créer Overlay // Popup
 
 https://www.guyom-design.com/blog/astuces/css/css-overlay/
+
+### Custom font avec Bootstrap
+
+https://bootstrapstudio.io/docs/web-fonts.html#custom-fonts
+
+### Grilles layout avec Bootstrap
+
+https://getbootstrap.com/docs/4.1/layout/grid/
