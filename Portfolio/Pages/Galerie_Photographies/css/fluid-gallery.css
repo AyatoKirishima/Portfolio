@@ -1,0 +1,220 @@
+/* Général */
+
+body {
+    background-color: #434c50;
+    min-height: 100vh;
+    font: normal 16px sans-serif;
+    padding: 0px 0;
+}
+
+/* Font */
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('../../Font/BebasNeue-Regular.woff2') format('woff2'), url('../../Font/BebasNeue-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.bebas {
+    font-family: 'Bebas Neue';
+    font-size: 45px;
+}
+
+/* Barre de navigation */
+
+#navbar {
+    z-index: 10;
+    /* Make it stick/fixed */
+    position: fixed;
+    /* Hide the navbar 50 px outside of the top view */
+    top: -50px;
+    /* Full width */
+    width: 100%;
+    /* Transition effect when sliding down (and up) */
+    transition: top 0.3s;
+}
+
+#menu {
+    list-style-type: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    width: 100%;
+    position: relative;
+}
+
+.menu {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    float: left;
+}
+
+.test:hover:not(.active) {
+    background-color: #111;
+}
+
+.test:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.active {
+    background-color: #4a9c98;
+}
+
+/* Galerie */
+
+.container.gallery-container {
+    background-color: #fff;
+    color: #35373a;
+    min-height: 100vh;
+    padding: 30px 0px;
+}
+
+.gallery-container h1 {
+    text-align: center;
+    margin-top: 50px;
+    /*font-family: 'Droid Sans', sans-serif;
+    font-weight: bold;*/
+}
+
+.gallery-container p.page-description {
+    text-align: center;
+    margin: 25px auto;
+    font-size: 18px;
+    color: #999;
+}
+
+.tz-gallery {
+    padding: 40px;
+}
+
+/* Override bootstrap column paddings */
+
+.tz-gallery .row>div {
+    padding: 2px;
+}
+
+.tz-gallery .lightbox img {
+    width: 100%;
+    border-radius: 0;
+    position: relative;
+}
+
+.tz-gallery .lightbox:before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -13px;
+    margin-left: -13px;
+    opacity: 0;
+    color: #fff;
+    font-size: 26px;
+    font-family: 'Glyphicons Halflings';
+    content: '\e003';
+    pointer-events: none;
+    z-index: 9000;
+    transition: 0.4s;
+}
+
+.tz-gallery .lightbox:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: rgba(46, 132, 206, 0.7);
+    content: '';
+    transition: 0.4s;
+}
+
+.tz-gallery .lightbox:hover:after, .tz-gallery .lightbox:hover:before {
+    opacity: 1;
+}
+
+.baguetteBox-button {
+    background-color: transparent !important;
+}
+
+@media(max-width: 768px) {
+    body {
+        padding: 0;
+    }
+}
+
+/* Footer */
+
+.footer-basic {
+    padding: 40px 0;
+    /* Light mode :
+    background-color: #ffffff;
+    color: #4b4c4d;
+    Dark mode : */
+    color: #f0f9ff;
+    background-color: #282d32;
+}
+
+.footer-basic ul {
+    padding: 20px;
+    list-style: none;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+.footer-basic li {
+    padding: 0 10px;
+}
+
+.footer-basic ul a {
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.footer-basic ul a:hover {
+    opacity: 1;
+}
+
+.footer-basic .social {
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.footer-basic .social>a {
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    margin: 0 8px;
+    color: inherit;
+    opacity: 0.75;
+}
+
+.footer-basic .social>a:hover {
+    opacity: 0.9;
+}
+
+.footer-basic .copyright {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13px;
+    color: #aaa;
+    margin-bottom: 0;
+}
