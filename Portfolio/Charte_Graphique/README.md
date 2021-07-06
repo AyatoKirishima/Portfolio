@@ -34,4 +34,4 @@ Concordance :
 - Couleurs
 - Animations !
 - Images / Style d'images
-- Transitions (si trop : surchargé, si trop <> amateur + transitions sobres !)
+- Transitions (si trop : surchargé, si trop <> amateur donc opter pour des **transitions sobres** !)
