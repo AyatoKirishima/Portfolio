@@ -139,7 +139,7 @@ html {
 /* Bouton se "remplissant" */
 
 .button {
-    background: linear-gradient(to right, rgba(63, 63, 63, 0.8) 50%,  rgba(255, 255, 255, 0.8) 50%);
+    background: linear-gradient(to right, rgba(63, 63, 63, 0.8) 50%, rgba(255, 255, 255, 0.8) 50%);
     background-size: 200% 100%;
     background-position: right bottom;
     transition: all .5s ease-out;
