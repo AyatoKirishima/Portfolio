@@ -29,3 +29,7 @@ https://freefrontend.com
 https://tympanus.net/codrops/2020/06/10/how-to-create-a-motion-hover-effect-for-a-background-image-grid/
 
 https://tympanus.net/codrops/
+
+## Galeries d'images / sliders
+
+https://www.guyom-design.com/blog/astuces/css/tuto_diapo_css/#!
