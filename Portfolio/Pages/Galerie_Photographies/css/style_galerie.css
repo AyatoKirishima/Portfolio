@@ -1,13 +1,17 @@
 body {
     background-color: #434c50;
+    background-image: url("../images/waves.mp4"); /*In gif format*/
+    background-repeat: no-repeat;
+    background-size: cover;
     min-height: 100vh;
     font: normal 16px sans-serif;
     padding: 40px 0;
 }
 
 .container.gallery-container {
-    background-color: #fff;
+    background-color: rgb(255,255,255,0.7);
     color: #35373a;
+    border-radius: 15px;
     min-height: 100vh;
     padding: 30px 50px;
 }

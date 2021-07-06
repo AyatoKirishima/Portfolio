@@ -1,5 +1,9 @@
 Ressources :
 
+# Pictures
+background-image: url("../images/bk.gif");
+
+
 http://www.w3bai.com/fr/css/default.html
 
 ### Flexbox :
@@ -33,3 +37,7 @@ https://tympanus.net/codrops/
 ## Galeries d'images / sliders
 
 https://www.guyom-design.com/blog/astuces/css/tuto_diapo_css/#!
+
+#### Créer Overlay // Popup
+
+https://www.guyom-design.com/blog/astuces/css/css-overlay/
