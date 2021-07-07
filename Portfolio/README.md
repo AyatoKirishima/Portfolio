@@ -49,3 +49,11 @@ https://bootstrapstudio.io/docs/web-fonts.html#custom-fonts
 ### Grilles layout avec Bootstrap
 
 https://getbootstrap.com/docs/4.1/layout/grid/
+
+## CSS HTML JS ANIMATION
+
+https://www.psd2html.com/blog/our-favorite-navigation-menu-effects.html
+
+### Hover Effects
+
+https://www.youtube.com/watch?v=d2ubY_TBK28&t=26s
