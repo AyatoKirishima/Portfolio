@@ -140,6 +140,16 @@ html {
     display: inline;
 }
 
+/* Taille Icones */
+
+.icon {
+    width: 20px;
+}
+
+.icon2 {
+    width: 45px;
+}
+
 /* Affichage titres themes */
 
 .title {
