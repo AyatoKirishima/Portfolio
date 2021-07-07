@@ -30,7 +30,8 @@
 <body>
     <!-- Barre de navigation -->
     <div id="navbar">
-        <ul id="menu" class=""> <!-- Si police trop grande : la barre dépasse ! -->
+        <ul id="menu" class="">
+            <!-- Si police trop grande : la barre dépasse ! -->
             <li><a class="active menu test" href="../../Accueil/html/Base.html">Accueil</a></li>
             <li><a class="menu test" href="../../Photographie/photographie.html">Photographies</a></li>
             <li><a class="menu test" href="#contact">Contact</a></li>
@@ -46,15 +47,47 @@
         <!-- Navigation entre les différents thèmes de photos -->
 
         <nav id="display_theme" class="display_theme">
-            <a href="#insects" class="themes">Insectes</a> |
+            <a href="#sunsets" class="themes">Couchers de Soleil</a> |
             <a href="#plants" class="themes">Fleurs / Plantes</a> |
-            <a href="#sunsets" class="themes">Couchers de Soleil</a>
+            <a href="#insects" class="themes">Insectes</a>
         </nav>
+
+        <!-- Section Sunsets -->
+        <a id="sunsets" class="title">
+            <h2 class="title">Section Couchers de Soleil</h2>
+        </a>
+        <div class="tz-gallery">
+
+            <div class="row">
+                <div class="col-sm-6 col-md-4">
+                    <a class="lightbox" href="../images/sunsets/1.JPG">
+                        <img src="../images/sunsets/1.JPG" alt="Bourdon">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <a class="lightbox" href="../images/sunsets/2.JPG">
+                        <img src="../images/sunsets/2.JPG" alt="Bourdon">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <a class="lightbox" href="../images/sunsets/3.JPG">
+                        <img src="../images/sunsets/3.JPG" alt="Bourdon">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Section Fleurs/Plantes -->
+        <a id="plants" class="title">
+            <h2 class="title">Section Fleurs / Plantes</h2>
+        </a>
 
         <!-- Section Insectes -->
         <a id="insects" class="title">
             <h2 class="title">Section Insectes</h2>
         </a>
+
         <div class="tz-gallery">
 
             <div class="row">
