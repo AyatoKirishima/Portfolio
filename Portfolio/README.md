@@ -58,3 +58,5 @@ https://www.psd2html.com/blog/our-favorite-navigation-menu-effects.html
 ### Hover Effects
 
 https://www.youtube.com/watch?v=d2ubY_TBK28&t=26s
+
+### Fonts w/ bootstrap [(converter)](https://transfonter.org)

@@ -18,6 +18,9 @@ Maybe I won't use it idk yet
 ![Bebas Neue](https://www.dafont.com/img/illustration/b/e/bebas_neue.png)
 ![Bebas Neue Alphabet](https://www.dafont.com/img/charmap/b/e/bebas_neue0.png)
 
+- ![Encode Sans SC](https://fonts.google.com/specimen/Encode+Sans+SC#glyphs) utilisé pour la barre de menu descendante !
+
+
 -------------
 
 ## Favicon :
