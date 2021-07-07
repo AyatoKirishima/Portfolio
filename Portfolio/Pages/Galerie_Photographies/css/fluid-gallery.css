@@ -7,6 +7,12 @@ body {
     padding: 0px 0;
 }
 
+/* Soft scroll /!\ BUG SUR OPERA SEULEMENT */
+
+html {
+    scroll-behavior: smooth;
+}
+
 /* Font */
 
 @font-face {
@@ -81,7 +87,7 @@ body {
 .themes:hover {
     text-decoration: underline;
     color: rgba(63, 63, 63, 0.9);
-    text-decoration-color: red; /*I'll change this later*/
+    /* text-decoration-color: red; I'll change this later*/
 }
 
 .display_theme {
@@ -112,6 +118,19 @@ body {
     display: inline;
 }
 
+/* Affichage titres themes */
+
+.title {
+    margin-left: 35px;
+    font-family: 'Bebas Neue';
+    font-size: 40px;
+    color: rgba(63, 63, 63, 0.8);
+}
+
+.title:hover {
+    text-decoration: none;
+    color: rgba(63, 63, 63, 0.9);
+}
 
 /* Galerie */
 
@@ -137,7 +156,11 @@ body {
 }
 
 .tz-gallery {
-    padding: 40px;
+    padding: 0px;
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 /* Override bootstrap column paddings */
