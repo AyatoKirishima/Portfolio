@@ -22,11 +22,6 @@ body {
     font-size: 45px;
 }
 
-.bebas_menu {
-    font-family: 'Bebas Neue';
-    font-size: 20px;
-}
-
 /* Barre de navigation */
 
 #navbar {
@@ -81,12 +76,42 @@ body {
 
 .themes {
     color: #4a9c98;
+    align-content: center;
 }
 
 .themes:hover {
     text-decoration: underline;
     text-decoration-color: red;
 }
+
+.display_theme {
+    font-family: 'Bebas Neue';
+    font-size: 25px;
+}
+
+#display_theme {
+    text-align: center;
+}
+
+#display_theme ul {
+    display: inline-block;
+    list-style: none;
+}
+
+* html #display_theme ul {
+    /* Target IE6 */
+    display: inline;
+}
+
+*+html #display_theme ul {
+    /* Target IE7 */
+    display: inline;
+}
+
+#display_theme li {
+    display: inline;
+}
+
 
 /* Galerie */
 
