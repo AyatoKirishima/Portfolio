@@ -63,6 +63,7 @@ html {
 
 .menu {
     display: block;
+    font-family: 'Encode Sans SC', sans-serif;
     color: white;
     text-align: center;
     padding: 14px 16px;
@@ -80,7 +81,7 @@ html {
 }
 
 .active {
-    background-color: #4a9c98;
+    background-color: #444;
 }
 
 /* Navigation entre les photos */
