@@ -1,6 +1,6 @@
 Ressources :
 
-# Pictures
+# Pictures as bkg
 background-image: url("../images/bk.gif");
 
 # [Useful Inspiration](https://codemyui.com)
