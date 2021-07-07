@@ -75,13 +75,13 @@ body {
 /* Navigation entre les photos */
 
 .themes {
-    color: #4a9c98;
-    align-content: center;
+    color :rgba(63, 63, 63, 0.7);
 }
 
 .themes:hover {
     text-decoration: underline;
-    text-decoration-color: red;
+    color: rgba(63, 63, 63, 0.9);
+    text-decoration-color: red; /*I'll change this later*/
 }
 
 .display_theme {
