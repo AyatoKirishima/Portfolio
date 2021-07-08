@@ -40,6 +40,8 @@ html {
 
 .menu {
     display: block;
+    font-family: 'Encode Sans SC', sans-serif;
+    font-size: small;
     color: white;
     text-align: center;
     padding: 14px 16px;
