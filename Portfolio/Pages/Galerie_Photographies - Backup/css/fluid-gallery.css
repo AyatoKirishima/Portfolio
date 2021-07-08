@@ -2,9 +2,20 @@
 
 body {
     background-color: #434c50;
+    background-image: url("../images/2.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: fixed;
     min-height: 100vh;
     font: normal 16px sans-serif;
     padding: 0px 0;
+}
+
+/* Soft scroll /!\ BUG SUR OPERA SEULEMENT */
+
+html {
+    scroll-behavior: smooth;
 }
 
 /* Font */
@@ -52,6 +63,8 @@ body {
 
 .menu {
     display: block;
+    font-family: 'Encode Sans SC', sans-serif;
+    font-size: small;
     color: white;
     text-align: center;
     padding: 14px 16px;
@@ -69,14 +82,93 @@ body {
 }
 
 .active {
-    background-color: #4a9c98;
+    background-color: #444;
+}
+
+/* Bouton haut de page
+
+#scroll_to_top {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 25px;
+    right: 10px;
+}
+
+#scroll_to_top img {
+    width: 50px;
+    opacity: 0.8;
+    z-index: 99999;
+} */
+
+/* Navigation entre les photos */
+
+.themes {
+    color: rgba(63, 63, 63, 0.7);
+}
+
+.themes:hover {
+    text-decoration: underline;
+    color: rgba(63, 63, 63, 0.9);
+    /* text-decoration-color: red; I'll change this later*/
+}
+
+.display_theme {
+    font-family: 'Bebas Neue';
+    font-size: 25px;
+}
+
+#display_theme {
+    text-align: center;
+}
+
+#display_theme ul {
+    display: inline-block;
+    list-style: none;
+}
+
+* html #display_theme ul {
+    /* Target IE6 */
+    display: inline;
+}
+
+*+html #display_theme ul {
+    /* Target IE7 */
+    display: inline;
+}
+
+#display_theme li {
+    display: inline;
+}
+
+/* Taille Icones */
+
+.icon {
+    width: 20px;
+}
+
+.icon2 {
+    width: 45px;
+}
+
+/* Affichage titres themes */
+
+.title {
+    margin-left: 35px;
+    font-family: 'Bebas Neue';
+    font-size: 40px;
+    color: rgba(63, 63, 63, 0.8);
+}
+
+.title:hover {
+    text-decoration: none;
+    color: rgba(63, 63, 63, 0.9);
 }
 
 /* Galerie */
 
 .container.gallery-container {
     background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 10px;
     color: #35373a;
     min-height: 100vh;
     padding: 30px 0px;
@@ -97,7 +189,11 @@ body {
 }
 
 .tz-gallery {
-    padding: 40px;
+    padding: 0px;
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 /* Override bootstrap column paddings */
@@ -163,7 +259,7 @@ body {
     color: #4b4c4d;
     Dark mode : */
     color: #f0f9ff;
-    background-color: #282d32;
+    background-color: #282d32cc;
 }
 
 .footer-basic ul {
