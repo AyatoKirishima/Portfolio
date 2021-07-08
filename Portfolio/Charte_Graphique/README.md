@@ -38,3 +38,6 @@ Concordance :
 - Animations !
 - Images / Style d'images
 - Transitions (si trop : surchargé, si trop <> amateur donc opter pour des **transitions sobres** !)
+
+## Menu
+

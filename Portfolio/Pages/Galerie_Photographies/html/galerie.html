@@ -24,6 +24,47 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
 
+    <!-- Bootstrap nav bar -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function () {
+
+            el_autohide = document.querySelector('.autohide');
+
+            // add padding-top to bady (if necessary)
+            navbar_height = document.querySelector('.navbar').offsetHeight;
+            document.body.style.paddingTop = navbar_height + 'px';
+
+            if (el_autohide) {
+
+                var last_scroll_top = 0;
+                window.addEventListener('scroll', function () {
+                    let scroll_top = window.scrollY;
+                    if (scroll_top < last_scroll_top) {
+                        el_autohide.classList.remove('scrolled-down');
+                        el_autohide.classList.add('scrolled-up');
+                    }
+                    else {
+                        el_autohide.classList.remove('scrolled-up');
+                        el_autohide.classList.add('scrolled-down');
+                    }
+                    last_scroll_top = scroll_top;
+
+                });
+                // window.addEventListener
+
+            }
+            // if
+
+        });
+        // DOMContentLoaded  end
+
+
+    </script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript" src="../../Accueil/js/scroll_bar.js"></script>
@@ -32,16 +73,42 @@
 </head>
 
 <body>
-    <!-- Barre de navigation -->
+    <!-- Barre de navigation
     <div id="navbar">
         <ul id="menu" class="">
-            <!-- Si police trop grande : la barre dépasse ! -->
+            Si police trop grande : la barre dépasse !
             <li><a class="active menu test" href="../../Accueil/html/Base.html">Accueil</a></li>
             <li><a class="menu test" href="../../Photographie/photographie.html">Photographies</a></li>
             <li><a class="menu test" href="#contact">Contact</a></li>
             <li><a class="menu test" href="#about">About</a></li>
         </ul>
-    </div>
+    </div> -->
+    <!-- ============= COMPONENT ============== -->
+    <nav class="autohide navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Brand</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="main_nav">
+
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#"> Menu item </a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"> Menu item </a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"> Dropdown right </a>
+                        <ul class="dropdown-menu dropdown-menu-right dropdown-menu-dark">
+                            <li><a class="dropdown-item" href="#"> Submenu item 1</a></li>
+                            <li><a class="dropdown-item" href="#"> Submenu item 2 </a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div> <!-- navbar-collapse.// -->
+        </div> <!-- container-fluid.// -->
+    </nav>
+    <!-- ============= COMPONENT END// ============== -->
+
     <!-- Bouton haut de page 
 
     <div id="scroll_to_top">

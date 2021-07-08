@@ -9,7 +9,7 @@ body {
     background-position: fixed;
     min-height: 100vh;
     font: normal 16px sans-serif;
-    padding: 0px 0;
+    padding: 0;
 }
 
 /* Soft scroll /!\ BUG SUR OPERA SEULEMENT */
@@ -34,6 +34,29 @@ html {
 }
 
 /* Barre de navigation */
+
+/* Bootstrap */
+
+.autohide {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1030;
+}
+
+.scrolled-down {
+    transform: translateY(-100%);
+    transition: all 0.3s ease-in-out;
+}
+
+.scrolled-up {
+    transform: translateY(0);
+    transition: all 0.3s ease-in-out;
+}
+
+/* No bootstrap */
 
 #navbar {
     z-index: 10;
