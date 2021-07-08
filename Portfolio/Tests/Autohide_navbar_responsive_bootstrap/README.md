@@ -1,3 +1,3 @@
-This bar will be used on the website !
+## This bar will be used on the website !
 
-![Source](https://bootstrap-menu.com/index.html)
+[Source](https://bootstrap-menu.com/index.html)
