@@ -7,12 +7,12 @@ body {
     background-attachment: fixed;
     background-size: cover;
     background-position: fixed;
-    min-height: 100vh;
-    font: normal 16px sans-serif;
+    /*min-height: 100vh;
+    font: normal 16px sans-serif;*/
     padding: 0;
 }
 
-/* Soft scroll /!\ BUG SUR OPERA SEULEMENT */
+/* Soft scroll /!\ BUG SUR OPERA + PAGE ACCUEIL SEULEMENT */
 
 html {
     scroll-behavior: smooth;
@@ -56,17 +56,17 @@ html {
     transition: all 0.3s ease-in-out;
 }
 
-/* No bootstrap */
+/* No bootstrap 
 
 #navbar {
     z-index: 10;
-    /* Make it stick/fixed */
+    /* Make it stick/fixed
     position: fixed;
-    /* Hide the navbar 50 px outside of the top view */
+    /* Hide the navbar 50 px outside of the top view
     top: -50px;
-    /* Full width */
+    /* Full width
     width: 100%;
-    /* Transition effect when sliding down (and up) */
+    /* Transition effect when sliding down (and up)
     transition: top 0.3s;
 }
 
