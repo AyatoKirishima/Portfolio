@@ -45,7 +45,7 @@ html {
     width: 100%;
     z-index: 1030;
     font-family: 'Encode Sans SC', Courier, monospace;
-    font-size: 17.8px;
+    font-size: 18px;
 }
 
 .scrolled-down {
@@ -74,6 +74,10 @@ html {
 
 .navbar-nav>li :focus {
     text-decoration: none;
+}
+
+.no-padding {
+    padding: 0%;
 }
 
 /* No bootstrap 
