@@ -12,15 +12,62 @@ html {
 
 /* Barre de navigation */
 
+/* Bootstrap */
+
+.autohide {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1030;
+    font-family: 'Encode Sans SC', Courier, monospace;
+    font-size: 18px;
+}
+
+.scrolled-down {
+    transform: translateY(-100%);
+    transition: all 0.3s ease-in-out;
+}
+
+.scrolled-up {
+    transform: translateY(0);
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-nav>li>.dropdown-menu {
+    background-color: #333;
+}
+
+.navbar-nav>li {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.navbar-nav>li :hover {
+    text-decoration: none;
+    background-color: #35373a;
+}
+
+.navbar-nav>li :focus {
+    text-decoration: none;
+}
+
+.no-padding {
+    padding: 0%;
+}
+
+/* No bootstrap 
+
 #navbar {
     z-index: 10;
-    /* Make it stick/fixed */
+    /* Make it stick/fixed
     position: fixed;
-    /* Hide the navbar 50 px outside of the top view */
+    /* Hide the navbar 50 px outside of the top view
     top: -50px;
-    /* Full width */
+    /* Full width
     width: 100%;
-    /* Transition effect when sliding down (and up) */
+    /* Transition effect when sliding down (and up)
     transition: top 0.3s;
 }
 
@@ -59,7 +106,7 @@ html {
 }
 
 .active {
-    background-color: #4a9c98;
+    background-color: #444;
 }
 
 /* Bannière */
