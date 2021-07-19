@@ -17,7 +17,7 @@
 
 body {
     margin: 0px;
-    background-color: red;
+    /*background-color: red;*/
 }
 
 /* Soft scroll */
@@ -28,13 +28,13 @@ html {
 
 /* Barre de navigation */
 
-/* Bootstrap */
+/* Bootstrap 
 
 .autohide {
     position: fixed;
     top: 0px;
     /*right: 0;
-    left: 0;*/
+    left: 0;
     width: 100%;
     z-index: 100;
     font-family: 'Encode Sans SC', Courier, monospace;
@@ -73,7 +73,7 @@ html {
 
 .no-padding {
     padding: 0%;
-}
+}*/
 
 /* No bootstrap 
 
