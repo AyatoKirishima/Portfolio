@@ -476,7 +476,8 @@ section.sec-blank {
     padding: 130px 0;
     min-height: 390px;
     background: #222;
-    background-image: repeating-linear-gradient(110deg, #2f2f2f, #2f2f2f 1px, transparent 1px, transparent 6px, #2f2f2f 6px, #2f2f2f 7px, transparent 7px, transparent 12px, #2f2f2f 12px, #2f2f2f 13px, transparent 13px, transparent 18px, #2f2f2f 18px, #2f2f2f 19px, transparent 19px, transparent 24px, #2f2f2f 24px, #2f2f2f 25px, transparent 25px, transparent 30px, #2f2f2f 30px, #2f2f2f 31px, transparent 31px, transparent 45px), repeating-linear-gradient(-110deg, #2f2f2f, #2f2f2f 1px, transparent 1px, transparent 6px, #2f2f2f 6px, #2f2f2f 7px, transparent 7px, transparent 12px, #2f2f2f 12px, #2f2f2f 13px, transparent 13px, transparent 18px, #2f2f2f 18px, #2f2f2f 19px, transparent 19px, transparent 24px, #2f2f2f 24px, #2f2f2f 25px, transparent 25px, transparent 30px, #2f2f2f 30px, #2f2f2f 31px, transparent 31px, transparent 45px);
+    background-image: var(--primary);
+    /*repeating-linear-gradient(110deg, #2f2f2f, #2f2f2f 1px, transparent 1px, transparent 6px, #2f2f2f 6px, #2f2f2f 7px, transparent 7px, transparent 12px, #2f2f2f 12px, #2f2f2f 13px, transparent 13px, transparent 18px, #2f2f2f 18px, #2f2f2f 19px, transparent 19px, transparent 24px, #2f2f2f 24px, #2f2f2f 25px, transparent 25px, transparent 30px, #2f2f2f 30px, #2f2f2f 31px, transparent 31px, transparent 45px), repeating-linear-gradient(-110deg, #2f2f2f, #2f2f2f 1px, transparent 1px, transparent 6px, #2f2f2f 6px, #2f2f2f 7px, transparent 7px, transparent 12px, #2f2f2f 12px, #2f2f2f 13px, transparent 13px, transparent 18px, #2f2f2f 18px, #2f2f2f 19px, transparent 19px, transparent 24px, #2f2f2f 24px, #2f2f2f 25px, transparent 25px, transparent 30px, #2f2f2f 30px, #2f2f2f 31px, transparent 31px, transparent 45px);*/
 }
 
 section.parallax {
