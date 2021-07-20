@@ -2,7 +2,7 @@
 
 :root {
     --primary: rgb(63, 63, 63);
-    --test: rgb(0, 183, 255);
+    --test: #DFBCB8;
 }
 
 /* Général */
@@ -334,7 +334,7 @@ html {
 }
 
 .hero:after {
-    background-color: rgba(62, 92, 135, 0.5);
+    background-color: rgba(0, 0, 0, 0.6);
     bottom: 0;
     content: '';
     left: -2000%;
