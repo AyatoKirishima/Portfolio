@@ -254,8 +254,8 @@ html {
         -webkit-text-stroke: 2px transparent;
         /*text-stroke: 2px transparent;
         -webkit-text-fill-color: #ffeba7;*/
-        /*text-fill-color: #ffeba7;*/
-        color: var(--test);
+        /*text-fill-color: #ffeba7;
+        color: var(--test);*/
     }
     .nav ul li a {
         font-size: 8vh;
@@ -334,7 +334,7 @@ html {
 }
 
 .hero:after {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.5);
     bottom: 0;
     content: '';
     left: -2000%;
