@@ -3,6 +3,11 @@
 :root {
     --primary: rgb(63, 63, 63);
     --test: #DFBCB8;
+    /*--white:;
+    --gray:;
+    --pink: #DFBCB8;
+    --green:;*/
+
 }
 
 /* Général */
@@ -84,7 +89,6 @@ html {
 }
 
 .nav {
-
     position: fixed;
     top: 33px;
     right: 50px;
