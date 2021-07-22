@@ -10,6 +10,15 @@ Utilisé page "Photographies"
 Maybe I won't use it idk yet
 --> I need more neutral colors
 
+### /!\ Blue is way too used....
+
+So ! Here's my color palette !
+(reminds me of plants I love it so much 🥰🥰)
+
+![More Soft Theme](Soft_color_theme.jpeg) 
+
+### This theme will be used in the portfolio !
+
 -------------
 
 ## Polices :
@@ -25,8 +34,18 @@ Maybe I won't use it idk yet
 
 ## Favicon :
 - Not decided yet...
+- Should I make my logo ? (LM)
 
 ---------------------------
+
+## Navigation / Menu
+
+- Accueil
+- A propos
+- Mes compétences
+- Mon parcours
+
+-------------
 
 Note 
 
@@ -39,5 +58,4 @@ Concordance :
 - Images / Style d'images
 - Transitions (si trop : surchargé, si trop <> amateur donc opter pour des **transitions sobres** !)
 
-## Menu
 
