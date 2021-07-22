@@ -2,13 +2,13 @@
 
 :root {
     --primary: rgb(63, 63, 63);
-    --test: #DFBCB8;
-    /*--white:;
-    --gray:;
+    --test: #DFBCB8; /* <--- to delete */
+    --white: #F2F2F2;
+    --light_gray: #DBDAC6;
+    --gray: #9B9187;
     --pink: #DFBCB8;
-    --green:;*/
-
-}
+    --green: #A3A64E;
+  }
 
 /* Général */
 
