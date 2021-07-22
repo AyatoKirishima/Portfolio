@@ -2,7 +2,8 @@
 
 :root {
   --primary: #313440;
-  --test: #DFBCB8; /* <--- to delete */
+  --test: #DFBCB8;
+  /* <--- to delete */
   --white: #F2F2F2;
   --light_gray: #DBDAC6;
   --gray: #9B9187;
@@ -14,9 +15,17 @@ html {
   height: 100%;
 }
 
+/* Bebas Font */
+
+.bebas {
+  font-family: 'Bebas Neue', cursive;
+}
+
+/* Page */
+
 body {
   overflow: hidden;
-  background: var(--primary) url("") no-repeat center center fixed;
+  background: var(--primary) url("../images/monstera.jpg") no-repeat center center fixed;
   background-size: cover;
   position: fixed;
   padding: 0px;
@@ -31,7 +40,7 @@ body:before {
   content: "";
   height: 0px;
   padding: 0px;
-  border: 130em solid #313440;
+  border: 130em solid var(--primary);
   position: absolute;
   left: 50%;
   top: 100%;
@@ -51,11 +60,13 @@ h1, h2 {
 }
 
 h1 {
-  font-size: 24px;
+  font-size: 35px;
 }
 
 h2 {
   font-size: 16px;
+  font-style: italic;
+  color: var(--primary);
 }
 
 p {
@@ -63,7 +74,7 @@ p {
 }
 
 .profile-card {
-  background: var(--green);
+  background: var(--pink);
   width: 56px;
   height: 56px;
   position: absolute;
@@ -88,7 +99,7 @@ p {
   height: 280px;
   padding: 40px 20px 30px 20px;
   display: inline-block;
-  float: left;
+  /*float: left;*/
   border-right: 2px dashed #EEEEEE;
   background: #FFFFFF;
   color: #000000;
@@ -124,8 +135,8 @@ p {
   border: 4px solid #FFFFFF;
   -webkit-transform: scale(0);
   transform: scale(0);
-  background: -webkit-linear-gradient(top, #2196F3 0%, #2196F3 50%, #FFC107 50%, #FFC107 100%);
-  background: linear-gradient(#2196F3 0%, #2196F3 50%, #FFC107 50%, #FFC107 100%);
+  background: -webkit-linear-gradient(top, var(--green), bottom var(--pink));
+  background: linear-gradient(var(--green), var(--pink));
   -webkit-border-radius: 50%;
   border-radius: 50%;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
@@ -154,7 +165,7 @@ p {
   width: 175px;
   height: 180px;
   display: inline-block;
-  float: right;
+  /*float: right;*/
   padding: 50px 20px 30px 20px;
   background: #FFFFFF;
   color: #333333;
@@ -168,7 +179,7 @@ p {
 .profile-social-links {
   width: 218px;
   display: inline-block;
-  float: right;
+  /*float: right;*/
   margin: 0px;
   padding: 15px 20px;
   background: #FFFFFF;
@@ -307,7 +318,7 @@ p {
 
 @-webkit-keyframes moveUp {
   0% {
-    background: var(--green);
+    background: var(--gray);
     top: 100%;
   }
   50% {
@@ -321,7 +332,7 @@ p {
 
 @keyframes moveUp {
   0% {
-    background: var(--green);
+    background: var(--gray);
     top: 100%;
   }
   50% {
@@ -343,7 +354,7 @@ p {
   100% {
     width: 440px;
     height: 280px;
-    background: #FFFFFF;
+    background: #f6dcdc;
     -webkit-border-radius: 4px;
   }
 }
@@ -434,7 +445,7 @@ p {
   body:before {
     width: 0px;
   }
-  @ -webkit-keyframes puff {
+  @-webkit-keyframes puff {
     0% {
       top: 100%;
       width: 0px;
@@ -481,9 +492,9 @@ p {
     display: block;
     float: none;
   }
-  @ -webkit-keyframes materia {
+  @-webkit-keyframes materia {
     0% {
-      background: #E0E0E0;
+      background: #FFFFFF;
     }
     50% {
       -webkit-border-radius: 4px;
@@ -491,7 +502,7 @@ p {
     100% {
       width: 280px;
       height: 440px;
-      background: #FFFFFF;
+      background: white;
       -webkit-border-radius: 4px;
     }
   }
@@ -505,7 +516,7 @@ p {
     100% {
       width: 280px;
       height: 440px;
-      background: #FFFFFF;
+      background: white;
       border-radius: 4px;
     }
   }
