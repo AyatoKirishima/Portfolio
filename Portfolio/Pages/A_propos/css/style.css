@@ -50,7 +50,7 @@ html {
   content: '';
   display: block;
   width: 30px;
-  height: 20px;
+  height: 17px; /* Hauteur ajustée, si bug il y a, régler ici*/
   z-index: 20;
   top: 0;
   left: 0;
