@@ -23,6 +23,10 @@ html {
 
 /* Barre de navigation */
 
+.deco {
+  text-decoration: none;
+}
+
 [type="checkbox"]:checked, [type="checkbox"]:not(:checked) {
   position: absolute;
   left: -9999px;
