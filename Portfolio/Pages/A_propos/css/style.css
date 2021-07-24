@@ -2,8 +2,6 @@
 
 :root {
   --primary: #313440;
-  --test: #DFBCB8;
-  /* <--- to delete */
   --white: #F2F2F2;
   --light_gray: #DBDAC6;
   --gray: #9B9187;
@@ -260,7 +258,7 @@ animation: swing-in-top .5s cubic-bezier(.175, .885, .32, 1.275) 4s both
 
 .nav ul li a:hover {
   text-decoration: none;
-  color: var(--test);
+  color: var(--pink);
 }
 
 .nav ul li a:after {
