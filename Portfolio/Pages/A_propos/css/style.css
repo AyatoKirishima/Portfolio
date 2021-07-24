@@ -23,19 +23,32 @@ html {
 
 /* Barre de navigation */
 
+/* Animation */
+
+@keyframes swing-in-top {
+  0% {
+    transform: rotateX(-100deg);
+    transform-origin: top;
+    opacity: 0
+  }
+  100% {
+    transform: rotateX(0deg);
+    transform-origin: top;
+    opacity: 1
+  }
+}
+
 /* Logo HOME ACCUEIL*/
 
 .logo {
   position: relative;
   display: inline-block;
   margin: 0px;
-  top: 60px;
+  top: 50px;
   left: 50px;
   z-index: 50;
   /* Animation */
-  transition: all 250ms linear;
-  opacity: 0;
-  animation: fadeIn 2s ease-in-out 5s forwards;
+animation: swing-in-top .5s cubic-bezier(.175, .885, .32, 1.275) 4s both
 }
 
 .logo img {
@@ -57,6 +70,9 @@ html {
 
 @keyframes fadeIn {
   0% {
+    opacity: 0;
+  }
+  50% {
     opacity: 0;
   }
   100% {
@@ -613,7 +629,7 @@ p {
 
 @-webkit-keyframes moveUp {
   0% {
-    background: var(--gray);
+    background: var(--pink);
     top: 100%;
   }
   50% {
@@ -627,7 +643,7 @@ p {
 
 @keyframes moveUp {
   0% {
-    background: var(--gray);
+    background: var(--pink);
     top: 100%;
   }
   50% {
