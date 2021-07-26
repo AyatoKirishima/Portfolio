@@ -244,15 +244,16 @@ animation: swing-in-top .5s cubic-bezier(.175, .885, .32, 1.275) 4s both
   transition-delay: 50ms;
 }
 
+/* Police */
 .nav ul li a {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Bebas Neue', cursive;/*'Montserrat', sans-serif;*/
   font-size: 9vh;
   text-transform: uppercase;
-  line-height: 1.2;
-  font-weight: 800;
+  line-height: 1;
+  font-weight: 0;
   display: inline-block;
   position: relative;
-  color: #ececee;
+  color: var(--white);
   transition: all 250ms linear;
 }
 
