@@ -2,8 +2,6 @@
 
 :root {
     --primary: rgb(63, 63, 63);
-    --test: #DFBCB8;
-    /* <--- to delete */
     --white: #F2F2F2;
     --light_gray: #DBDAC6;
     --gray: #9B9187;
@@ -11,6 +9,12 @@
     --green: #A3A64E;
 }
 
+/* Bebas Font */
+
+.bebas {
+    font-family: 'Bebas Neue', cursive;
+  }
+  
 /* Général */
 
 body {
@@ -67,7 +71,7 @@ html {
     z-index: 20;
     top: 10px;
     right: 4px;
-    background-color: #ececee;
+    background-color: var(--white);
     margin-top: -1px;
     transition: width 100ms 1750ms ease, right 100ms 1750ms ease, margin-top 100ms ease, transform 200ms cubic-bezier(0.23, 1, 0.32, 1);
 }
@@ -201,7 +205,7 @@ html {
 
 .nav ul li a:hover {
     text-decoration: none;
-    color: var(--test);
+    color: #DFBCB8;
 }
 
 .nav ul li a:after {
@@ -371,7 +375,7 @@ html {
 
 .hero-container p {
     color: white;
-    font-family: "Roboto Condensed", sans-serif;
+    font-family: 'Bebas Neue', cursive;
     font-size: 13px;
     font-weight: bold;
     letter-spacing: 6px;
@@ -409,11 +413,11 @@ html {
 
 .hero-title {
     color: white;
-    font-family: "Playfair Display", serif;
-    font-size: 17vw;
-    font-weight: 500;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 10vw;
+    font-weight: 0;
     letter-spacing: 1px;
-    line-height: 1.1;
+    line-height: 1;
     margin: 5px 0;
     text-align: left;
     width: 85%;
@@ -422,6 +426,7 @@ html {
 @media screen and (min-width: 640px) {
     .hero-title {
         font-size: 10vw;
+        width: 60%;
     }
 }
 
