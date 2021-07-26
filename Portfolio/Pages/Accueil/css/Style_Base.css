@@ -2,13 +2,14 @@
 
 :root {
     --primary: rgb(63, 63, 63);
-    --test: #DFBCB8; /* <--- to delete */
+    --test: #DFBCB8;
+    /* <--- to delete */
     --white: #F2F2F2;
     --light_gray: #DBDAC6;
     --gray: #9B9187;
     --pink: #DFBCB8;
     --green: #A3A64E;
-  }
+}
 
 /* Général */
 
@@ -184,15 +185,17 @@ html {
     transition-delay: 50ms;
 }
 
+/* Police */
+
 .nav ul li a {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Bebas Neue', cursive;
     font-size: 9vh;
     text-transform: uppercase;
-    line-height: 1.2;
-    font-weight: 800;
+    line-height: 1;
+    font-weight: 0;
     display: inline-block;
     position: relative;
-    color: #ececee;
+    color: var(--white);
     transition: all 250ms linear;
 }
 

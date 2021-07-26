@@ -46,7 +46,7 @@ html {
   left: 50px;
   z-index: 50;
   /* Animation */
-animation: swing-in-top .5s cubic-bezier(.175, .885, .32, 1.275) 4s both
+  animation: swing-in-top .5s cubic-bezier(.175, .885, .32, 1.275) 4s both
 }
 
 .logo img {
@@ -245,8 +245,10 @@ animation: swing-in-top .5s cubic-bezier(.175, .885, .32, 1.275) 4s both
 }
 
 /* Police */
+
 .nav ul li a {
-  font-family: 'Bebas Neue', cursive;/*'Montserrat', sans-serif;*/
+  font-family: 'Bebas Neue', cursive;
+  /*'Montserrat', sans-serif;*/
   font-size: 9vh;
   text-transform: uppercase;
   line-height: 1;
