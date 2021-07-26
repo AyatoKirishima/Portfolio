@@ -13,8 +13,8 @@
 
 .bebas {
     font-family: 'Bebas Neue', cursive;
-  }
-  
+}
+
 /* Général */
 
 body {
@@ -403,6 +403,15 @@ html {
     background-size: 200% 100%;
     background-position: right bottom;
     transition: all .5s ease-out;
+    /* Font */
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+    font-size: 7vh;
+}
+@media screen and (max-width: 600px) {
+    .button {
+    font-size: 4vh;
+    }
 }
 
 .button:hover {
@@ -410,6 +419,8 @@ html {
     text-decoration: none;
     color: white;
 }
+
+/* Titre */
 
 .hero-title {
     color: white;

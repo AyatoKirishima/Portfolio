@@ -1,12 +1,12 @@
 /* Couleurs Charte Graphique */
 
 :root {
-  --primary: #313440;
-  --white: #F2F2F2;
-  --light_gray: #DBDAC6;
-  --gray: #9B9187;
-  --pink: #DFBCB8;
-  --green: #A3A64E;
+  --primary: #292b2c!important;
+  --white: #F2F2F2!important;
+  --light_gray: #DBDAC6!important;
+  --gray: #9B9187!important;
+  --pink: #DFBCB8!important;
+  --green: #A3A64E!important;
 }
 
 html {
