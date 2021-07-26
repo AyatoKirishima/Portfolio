@@ -1,12 +1,12 @@
 /* Couleurs Charte Graphique */
 
 :root {
-    --primary: rgb(63, 63, 63);
-    --white: #F2F2F2;
-    --light_gray: #DBDAC6;
-    --gray: #9B9187;
-    --pink: #DFBCB8;
-    --green: #A3A64E;
+    --primary: #292b2c!important;
+    --white: #F2F2F2!important;
+    --light_gray: #DBDAC6!important;
+    --gray: #9B9187!important;
+    --pink: #DFBCB8!important;
+    --green: #A3A64E!important;
 }
 
 /* Bebas Font */
@@ -205,7 +205,7 @@ html {
 
 .nav ul li a:hover {
     text-decoration: none;
-    color: #DFBCB8;
+    color: var(--pink);
 }
 
 .nav ul li a:after {
@@ -386,7 +386,7 @@ html {
 
 .hero-button {
     background: rgba(255, 255, 255, 0.8);
-    color: #44575b;
+    color: var(--primary);
     font-size: 24px;
     float: left;
     text-transform: uppercase;
@@ -678,7 +678,7 @@ section.sec-blank {
     position: relative;
     padding: 130px 0;
     min-height: 390px;
-    background: #222;
+    background: var(--primary);
     background-image: var(--primary);
     /*repeating-linear-gradient(110deg, #2f2f2f, #2f2f2f 1px, transparent 1px, transparent 6px, #2f2f2f 6px, #2f2f2f 7px, transparent 7px, transparent 12px, #2f2f2f 12px, #2f2f2f 13px, transparent 13px, transparent 18px, #2f2f2f 18px, #2f2f2f 19px, transparent 19px, transparent 24px, #2f2f2f 24px, #2f2f2f 25px, transparent 25px, transparent 30px, #2f2f2f 30px, #2f2f2f 31px, transparent 31px, transparent 45px), repeating-linear-gradient(-110deg, #2f2f2f, #2f2f2f 1px, transparent 1px, transparent 6px, #2f2f2f 6px, #2f2f2f 7px, transparent 7px, transparent 12px, #2f2f2f 12px, #2f2f2f 13px, transparent 13px, transparent 18px, #2f2f2f 18px, #2f2f2f 19px, transparent 19px, transparent 24px, #2f2f2f 24px, #2f2f2f 25px, transparent 25px, transparent 30px, #2f2f2f 30px, #2f2f2f 31px, transparent 31px, transparent 45px);*/
 }
