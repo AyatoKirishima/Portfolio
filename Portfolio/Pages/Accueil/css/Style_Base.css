@@ -374,12 +374,12 @@ html {
 }
 
 .hero-container p {
-    color: white;
+    color: var(--white);
     font-family: 'Bebas Neue', cursive;
     font-size: 13px;
     font-weight: bold;
     letter-spacing: 6px;
-    opacity: 0.8;
+    opacity: 0.6;
     text-transform: uppercase;
     text-align: left;
 }
@@ -399,18 +399,21 @@ html {
 /* Bouton se "remplissant" */
 
 .button {
-    background: linear-gradient(to right, rgba(63, 63, 63, 0.8) 50%, rgba(255, 255, 255, 0.8) 50%);
+    background: linear-gradient(to right, rgba(63, 63, 63, 0.7) 50%, rgba(255, 255, 255, 0.7) 50%);
     background-size: 200% 100%;
     background-position: right bottom;
     transition: all .5s ease-out;
     /* Font */
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'Encode Sans SC', Courier, monospace;
+    font-weight: bold;
     text-align: center;
-    font-size: 7vh;
+    font-size: 3.5vh;
+    color: rgba(63, 63, 63, 0.8);
 }
+
 @media screen and (max-width: 850px) {
     .button {
-    font-size: 4vh;
+        font-size: 3vh;
     }
 }
 
