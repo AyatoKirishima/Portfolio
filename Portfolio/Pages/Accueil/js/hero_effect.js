@@ -1,6 +1,12 @@
-/**
- * Hero fade transition
- */
+/* Fade Transition
+*
+* Not active since it cause mixed contents
+*
+*/
+
+
+
+/*
 window.HeroFade_Object = {};
 ( function( window, $, that ) {
 
@@ -42,4 +48,4 @@ window.HeroFade_Object = {};
 	// Engage!
 	$( that.init );
 
-})( window, jQuery, window.HeroFade_Object );
+})( window, jQuery, window.HeroFade_Object );*/
