@@ -7,34 +7,47 @@
     --gray: #9B9187!important;
     --pink: #DFBCB8!important;
     --green: #A3A64E!important;
-  }
+}
 
-  /* Bebas Font */
+/* Général */
+
+body {
+    margin: 0px;
+    /*background-color: red;*/
+}
+
+/* Soft scroll */
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Bebas Font */
 
 .bebas {
     font-family: 'Bebas Neue', cursive;
-  }
-  
-  /* Barre de navigation */
-  
-  /* Animation */
-  
-  @keyframes swing-in-top {
+}
+
+/* Barre de navigation */
+
+/* Animation */
+
+@keyframes swing-in-top {
     0% {
-      transform: rotateX(-100deg);
-      transform-origin: top;
-      opacity: 0
+        transform: rotateX(-100deg);
+        transform-origin: top;
+        opacity: 0
     }
     100% {
-      transform: rotateX(0deg);
-      transform-origin: top;
-      opacity: 1
+        transform: rotateX(0deg);
+        transform-origin: top;
+        opacity: 1
     }
-  }
-  
-  /* Logo HOME ACCUEIL*/
-  
-  .logo {
+}
+
+/* Logo HOME ACCUEIL*/
+
+.logo {
     position: relative;
     display: inline-block;
     margin: 0px;
@@ -43,49 +56,49 @@
     z-index: 50;
     /* Animation */
     animation: swing-in-top .5s cubic-bezier(.175, .885, .32, 1.275) 4s both
-  }
-  
-  .logo img {
+}
+
+.logo img {
     height: 40px;
     width: auto;
-  }
-  
-  .logo .img-top {
+}
+
+.logo .img-top {
     display: none;
     position: absolute;
     top: 0;
     left: 0;
     z-index: 99;
-  }
-  
-  .logo:hover .img-top {
+}
+
+.logo:hover .img-top {
     display: inline;
-  }
-  
-  @keyframes fadeIn {
+}
+
+@keyframes fadeIn {
     0% {
-      opacity: 0;
+        opacity: 0;
     }
     50% {
-      opacity: 0;
+        opacity: 0;
     }
     100% {
-      opacity: 1;
+        opacity: 1;
     }
-  }
-  
-  /* Menu */
-  
-  .deco {
+}
+
+/* Menu */
+
+.deco {
     text-decoration: none;
-  }
-  
-  [type="checkbox"]:checked, [type="checkbox"]:not(:checked) {
+}
+
+[type="checkbox"]:checked, [type="checkbox"]:not(:checked) {
     position: absolute;
     left: -9999px;
-  }
-  
-  .menu-icon:checked+label, .menu-icon:not(:checked)+label {
+}
+
+.menu-icon:checked+label, .menu-icon:not(:checked)+label {
     position: fixed;
     top: 63px;
     right: 75px;
@@ -96,9 +109,9 @@
     margin: 0;
     cursor: pointer;
     z-index: 100;
-  }
-  
-  .menu-icon:checked+label:before, .menu-icon:not(:checked)+label:before {
+}
+
+.menu-icon:checked+label:before, .menu-icon:not(:checked)+label:before {
     position: absolute;
     content: '';
     display: block;
@@ -111,9 +124,9 @@
     border-top: 2px solid #ececee;
     border-bottom: 2px solid #ececee;
     transition: border-width 100ms 1500ms ease, top 100ms 1600ms cubic-bezier(0.23, 1, 0.32, 1), height 100ms 1600ms cubic-bezier(0.23, 1, 0.32, 1), background-color 200ms ease, transform 200ms cubic-bezier(0.23, 1, 0.32, 1);
-  }
-  
-  .menu-icon:checked+label:after, .menu-icon:not(:checked)+label:after {
+}
+
+.menu-icon:checked+label:after, .menu-icon:not(:checked)+label:after {
     position: absolute;
     content: '';
     display: block;
@@ -125,26 +138,26 @@
     background-color: #ececee;
     margin-top: -1px;
     transition: width 100ms 1750ms ease, right 100ms 1750ms ease, margin-top 100ms ease, transform 200ms cubic-bezier(0.23, 1, 0.32, 1);
-  }
-  
-  .menu-icon:checked+label:before {
+}
+
+.menu-icon:checked+label:before {
     top: 10px;
     transform: rotate(45deg);
     height: 2px;
     background-color: #ececee;
     border-width: 0;
     transition: border-width 100ms 340ms ease, top 100ms 300ms cubic-bezier(0.23, 1, 0.32, 1), height 100ms 300ms cubic-bezier(0.23, 1, 0.32, 1), background-color 200ms 500ms ease, transform 200ms 1700ms cubic-bezier(0.23, 1, 0.32, 1);
-  }
-  
-  .menu-icon:checked+label:after {
+}
+
+.menu-icon:checked+label:after {
     width: 30px;
     margin-top: 0;
     right: 0;
     transform: rotate(-45deg);
     transition: width 100ms ease, right 100ms ease, margin-top 100ms 500ms ease, transform 200ms 1700ms cubic-bezier(0.23, 1, 0.32, 1);
-  }
-  
-  .nav {
+}
+
+.nav {
     position: fixed;
     top: 33px;
     right: 50px;
@@ -159,33 +172,33 @@
     background-color: #353746;
     animation: border-transform 7s linear infinite;
     transition: top 350ms 1100ms cubic-bezier(0.23, 1, 0.32, 1), right 350ms 1100ms cubic-bezier(0.23, 1, 0.32, 1), transform 250ms 1100ms ease, width 650ms 400ms cubic-bezier(0.23, 1, 0.32, 1), height 650ms 400ms cubic-bezier(0.23, 1, 0.32, 1);
-  }
-  
-  @keyframes border-transform {
+}
+
+@keyframes border-transform {
     0%, 100% {
-      border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%;
+        border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%;
     }
     14% {
-      border-radius: 40% 60% 54% 46% / 49% 60% 40% 51%;
+        border-radius: 40% 60% 54% 46% / 49% 60% 40% 51%;
     }
     28% {
-      border-radius: 54% 46% 38% 62% / 49% 70% 30% 51%;
+        border-radius: 54% 46% 38% 62% / 49% 70% 30% 51%;
     }
     42% {
-      border-radius: 61% 39% 55% 45% / 61% 38% 62% 39%;
+        border-radius: 61% 39% 55% 45% / 61% 38% 62% 39%;
     }
     56% {
-      border-radius: 61% 39% 67% 33% / 70% 50% 50% 30%;
+        border-radius: 61% 39% 67% 33% / 70% 50% 50% 30%;
     }
     70% {
-      border-radius: 50% 50% 34% 66% / 56% 68% 32% 44%;
+        border-radius: 50% 50% 34% 66% / 56% 68% 32% 44%;
     }
     84% {
-      border-radius: 46% 54% 50% 50% / 35% 61% 39% 65%;
+        border-radius: 46% 54% 50% 50% / 35% 61% 39% 65%;
     }
-  }
-  
-  .menu-icon:checked~.nav {
+}
+
+.menu-icon:checked~.nav {
     animation-play-state: paused;
     top: 50%;
     right: 50%;
@@ -193,9 +206,9 @@
     width: 200%;
     height: 200%;
     transition: top 350ms 700ms cubic-bezier(0.23, 1, 0.32, 1), right 350ms 700ms cubic-bezier(0.23, 1, 0.32, 1), transform 250ms 700ms ease, width 750ms 1000ms cubic-bezier(0.23, 1, 0.32, 1), height 750ms 1000ms cubic-bezier(0.23, 1, 0.32, 1);
-  }
-  
-  .nav ul {
+}
+
+.nav ul {
     position: absolute;
     top: 50%;
     left: 0;
@@ -207,9 +220,9 @@
     text-align: center;
     transform: translateY(-50%);
     list-style: none;
-  }
-  
-  .nav ul li {
+}
+
+.nav ul li {
     position: relative;
     display: block;
     width: 100%;
@@ -222,27 +235,27 @@
     visibility: hidden;
     transform: translateY(30px);
     transition: all 250ms linear;
-  }
-  
-  .nav ul li:nth-child(1) {
+}
+
+.nav ul li:nth-child(1) {
     transition-delay: 200ms;
-  }
-  
-  .nav ul li:nth-child(2) {
+}
+
+.nav ul li:nth-child(2) {
     transition-delay: 150ms;
-  }
-  
-  .nav ul li:nth-child(3) {
+}
+
+.nav ul li:nth-child(3) {
     transition-delay: 100ms;
-  }
-  
-  .nav ul li:nth-child(4) {
+}
+
+.nav ul li:nth-child(4) {
     transition-delay: 50ms;
-  }
-  
-  /* Police */
-  
-  .nav ul li a {
+}
+
+/* Police */
+
+.nav ul li a {
     font-family: 'Bebas Neue', cursive;
     /*'Montserrat', sans-serif;*/
     font-size: 9vh;
@@ -253,14 +266,14 @@
     position: relative;
     color: var(--white);
     transition: all 250ms linear;
-  }
-  
-  .nav ul li a:hover {
+}
+
+.nav ul li a:hover {
     text-decoration: none;
     color: var(--pink);
-  }
-  
-  .nav ul li a:after {
+}
+
+.nav ul li a:after {
     display: block;
     position: absolute;
     top: 50%;
@@ -272,55 +285,121 @@
     background-color: #353746;
     opacity: 0.8;
     transition: width 250ms linear;
-  }
-  
-  .nav ul li a:hover:after {
+}
+
+.nav ul li a:hover:after {
     width: 100%;
-  }
-  
-  .menu-icon:checked~.nav ul li {
+}
+
+.menu-icon:checked~.nav ul li {
     pointer-events: auto;
     visibility: visible;
     opacity: 1;
     transform: translateY(0);
     transition: opacity 350ms ease, transform 250ms ease;
-  }
-  
-  .menu-icon:checked~.nav ul li:nth-child(1) {
+}
+
+.menu-icon:checked~.nav ul li:nth-child(1) {
     transition-delay: 1400ms;
-  }
-  
-  .menu-icon:checked~.nav ul li:nth-child(2) {
+}
+
+.menu-icon:checked~.nav ul li:nth-child(2) {
     transition-delay: 1480ms;
-  }
-  
-  .menu-icon:checked~.nav ul li:nth-child(3) {
+}
+
+.menu-icon:checked~.nav ul li:nth-child(3) {
     transition-delay: 1560ms;
-  }
-  
-  .menu-icon:checked~.nav ul li:nth-child(4) {
+}
+
+.menu-icon:checked~.nav ul li:nth-child(4) {
     transition-delay: 1640ms;
-  }
-  
-  @media screen and (max-width: 991px) {
+}
+
+@media screen and (max-width: 991px) {
     .menu-icon:checked+label, .menu-icon:not(:checked)+label {
-      right: 55px;
+        right: 55px;
     }
     .logo {
-      left: 30px;
+        left: 30px;
     }
     .nav {
-      right: 30px;
+        right: 30px;
     }
     h1 {
-      font-size: 9vw;
-      -webkit-text-stroke: 2px transparent;
-      /*text-stroke: 2px transparent;
+        font-size: 9vw;
+        -webkit-text-stroke: 2px transparent;
+        /*text-stroke: 2px transparent;
         -webkit-text-fill-color: #ffeba7;*/
-      /*text-fill-color: #ffeba7;
+        /*text-fill-color: #ffeba7;
         color: var(--test);*/
     }
     .nav ul li a {
-      font-size: 8vh;
+        font-size: 8vh;
     }
-  }
+}
+
+/* Footer */
+
+.footer-basic {
+    padding: 40px 0;
+    /* Light mode :
+    background-color: #ffffff;
+    color: #4b4c4d;
+    Dark mode : */
+    color: #f0f9ff;
+    background-color: #282d32;
+}
+
+.footer-basic ul {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+.footer-basic li {
+    padding: 0 10px;
+}
+
+.footer-basic ul a {
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.footer-basic ul a:hover {
+    opacity: 1;
+}
+
+.footer-basic .social {
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.footer-basic .social>a {
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    margin: 0 8px;
+    color: inherit;
+    opacity: 0.75;
+}
+
+.footer-basic .social>a:hover {
+    opacity: 0.9;
+}
+
+.footer-basic .copyright {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13px;
+    color: #aaa;
+    margin-bottom: 0;
+}
