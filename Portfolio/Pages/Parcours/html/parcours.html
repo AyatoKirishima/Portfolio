@@ -1,63 +1,198 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Parcours</title>
+  <meta charset="UTF-8">
+  <title>Parcours</title>
 
-    <!-- Police BEBAS NEUE -->
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <!-- Police BEBAS NEUE -->
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 
-    <!-- favicon du site-->
-    <link rel="icon" type="image/jpg" href="../../Icons/favicon.png" />
+  <!-- favicon du site-->
+  <link rel="icon" type="image/jpg" href="../../Icons/favicon.png" />
 
-    <!-- Stylesheet of the page -->
-    <link rel="stylesheet" href="../css/parcours.css">
+  <!-- Stylesheet of the page -->
+  <link rel="stylesheet" href="../css/parcours.css">
 
-    <!-- Bootstrap Stylesheet -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+  <!-- Bootstrap Stylesheet -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Icones Stylesheet -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Icones Stylesheet -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css'>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800'>
+  <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-    <!-- Barre de navigation -->
-    <div class="logo"> <a href="../../index.html">
-            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDI3LjAyIDI3LjAyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyIiB4bWw6c3BhY2U9InByZXNlcnZlIiBjbGFzcz0iIj48Zz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KCTxwYXRoIHN0eWxlPSIiIGQ9Ik0zLjY3NCwyNC44NzZjMCwwLTAuMDI0LDAuNjA0LDAuNTY2LDAuNjA0YzAuNzM0LDAsNi44MTEtMC4wMDgsNi44MTEtMC4wMDhsMC4wMS01LjU4MSAgIGMwLDAtMC4wOTYtMC45MiwwLjc5Ny0wLjkyaDIuODI2YzEuMDU2LDAsMC45OTEsMC45MiwwLjk5MSwwLjkybC0wLjAxMiw1LjU2M2MwLDAsNS43NjIsMCw2LjY2NywwICAgYzAuNzQ5LDAsMC43MTUtMC43NTIsMC43MTUtMC43NTJWMTQuNDEzbC05LjM5Ni04LjM1OGwtOS45NzUsOC4zNThDMy42NzQsMTQuNDEzLDMuNjc0LDI0Ljg3NiwzLjY3NCwyNC44NzZ6IiBmaWxsPSIjZmZmZmZmIiBkYXRhLW9yaWdpbmFsPSIjMDMwMTA0Ij48L3BhdGg+Cgk8cGF0aCBzdHlsZT0iIiBkPSJNMCwxMy42MzVjMCwwLDAuODQ3LDEuNTYxLDIuNjk0LDBsMTEuMDM4LTkuMzM4bDEwLjM0OSw5LjI4YzIuMTM4LDEuNTQyLDIuOTM5LDAsMi45MzksMCAgIEwxMy43MzIsMS41NEwwLDEzLjYzNXoiIGZpbGw9IiNmZmZmZmYiIGRhdGEtb3JpZ2luYWw9IiMwMzAxMDQiPjwvcGF0aD4KCTxwb2x5Z29uIHN0eWxlPSIiIHBvaW50cz0iMjMuODMsNC4yNzUgMjEuMTY4LDQuMjc1IDIxLjE3OSw3LjUwMyAyMy44Myw5Ljc1MiAgIiBmaWxsPSIjZmZmZmZmIiBkYXRhLW9yaWdpbmFsPSIjMDMwMTA0Ij48L3BvbHlnb24+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPC9nPjwvc3ZnPg=="
-                alt="Accueil" />
-            <img class="img-top"
-                src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDI3LjAyIDI3LjAyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyIiB4bWw6c3BhY2U9InByZXNlcnZlIiBjbGFzcz0iIj48Zz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KCTxwYXRoIHN0eWxlPSIiIGQ9Ik0zLjY3NCwyNC44NzZjMCwwLTAuMDI0LDAuNjA0LDAuNTY2LDAuNjA0YzAuNzM0LDAsNi44MTEtMC4wMDgsNi44MTEtMC4wMDhsMC4wMS01LjU4MSAgIGMwLDAtMC4wOTYtMC45MiwwLjc5Ny0wLjkyaDIuODI2YzEuMDU2LDAsMC45OTEsMC45MiwwLjk5MSwwLjkybC0wLjAxMiw1LjU2M2MwLDAsNS43NjIsMCw2LjY2NywwICAgYzAuNzQ5LDAsMC43MTUtMC43NTIsMC43MTUtMC43NTJWMTQuNDEzbC05LjM5Ni04LjM1OGwtOS45NzUsOC4zNThDMy42NzQsMTQuNDEzLDMuNjc0LDI0Ljg3NiwzLjY3NCwyNC44NzZ6IiBmaWxsPSIjZGZiY2I4IiBkYXRhLW9yaWdpbmFsPSIjMDMwMTA0IiBjbGFzcz0iIj48L3BhdGg+Cgk8cGF0aCBzdHlsZT0iIiBkPSJNMCwxMy42MzVjMCwwLDAuODQ3LDEuNTYxLDIuNjk0LDBsMTEuMDM4LTkuMzM4bDEwLjM0OSw5LjI4YzIuMTM4LDEuNTQyLDIuOTM5LDAsMi45MzksMCAgIEwxMy43MzIsMS41NEwwLDEzLjYzNXoiIGZpbGw9IiNkZmJjYjgiIGRhdGEtb3JpZ2luYWw9IiMwMzAxMDQiIGNsYXNzPSIiPjwvcGF0aD4KCTxwb2x5Z29uIHN0eWxlPSIiIHBvaW50cz0iMjMuODMsNC4yNzUgMjEuMTY4LDQuMjc1IDIxLjE3OSw3LjUwMyAyMy44Myw5Ljc1MiAgIiBmaWxsPSIjZGZiY2I4IiBkYXRhLW9yaWdpbmFsPSIjMDMwMTA0IiBjbGFzcz0iIj48L3BvbHlnb24+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPC9nPjwvc3ZnPg==" />
-        </a>
-    </div>
+  <!-- Barre de navigation -->
+  <div class="logo"> <a href="../../index.html">
+      <img
+        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDI3LjAyIDI3LjAyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyIiB4bWw6c3BhY2U9InByZXNlcnZlIiBjbGFzcz0iIj48Zz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KCTxwYXRoIHN0eWxlPSIiIGQ9Ik0zLjY3NCwyNC44NzZjMCwwLTAuMDI0LDAuNjA0LDAuNTY2LDAuNjA0YzAuNzM0LDAsNi44MTEtMC4wMDgsNi44MTEtMC4wMDhsMC4wMS01LjU4MSAgIGMwLDAtMC4wOTYtMC45MiwwLjc5Ny0wLjkyaDIuODI2YzEuMDU2LDAsMC45OTEsMC45MiwwLjk5MSwwLjkybC0wLjAxMiw1LjU2M2MwLDAsNS43NjIsMCw2LjY2NywwICAgYzAuNzQ5LDAsMC43MTUtMC43NTIsMC43MTUtMC43NTJWMTQuNDEzbC05LjM5Ni04LjM1OGwtOS45NzUsOC4zNThDMy42NzQsMTQuNDEzLDMuNjc0LDI0Ljg3NiwzLjY3NCwyNC44NzZ6IiBmaWxsPSIjZmZmZmZmIiBkYXRhLW9yaWdpbmFsPSIjMDMwMTA0Ij48L3BhdGg+Cgk8cGF0aCBzdHlsZT0iIiBkPSJNMCwxMy42MzVjMCwwLDAuODQ3LDEuNTYxLDIuNjk0LDBsMTEuMDM4LTkuMzM4bDEwLjM0OSw5LjI4YzIuMTM4LDEuNTQyLDIuOTM5LDAsMi45MzksMCAgIEwxMy43MzIsMS41NEwwLDEzLjYzNXoiIGZpbGw9IiNmZmZmZmYiIGRhdGEtb3JpZ2luYWw9IiMwMzAxMDQiPjwvcGF0aD4KCTxwb2x5Z29uIHN0eWxlPSIiIHBvaW50cz0iMjMuODMsNC4yNzUgMjEuMTY4LDQuMjc1IDIxLjE3OSw3LjUwMyAyMy44Myw5Ljc1MiAgIiBmaWxsPSIjZmZmZmZmIiBkYXRhLW9yaWdpbmFsPSIjMDMwMTA0Ij48L3BvbHlnb24+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPC9nPjwvc3ZnPg=="
+        alt="Accueil" />
+      <img class="img-top"
+        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDI3LjAyIDI3LjAyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyIiB4bWw6c3BhY2U9InByZXNlcnZlIiBjbGFzcz0iIj48Zz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KCTxwYXRoIHN0eWxlPSIiIGQ9Ik0zLjY3NCwyNC44NzZjMCwwLTAuMDI0LDAuNjA0LDAuNTY2LDAuNjA0YzAuNzM0LDAsNi44MTEtMC4wMDgsNi44MTEtMC4wMDhsMC4wMS01LjU4MSAgIGMwLDAtMC4wOTYtMC45MiwwLjc5Ny0wLjkyaDIuODI2YzEuMDU2LDAsMC45OTEsMC45MiwwLjk5MSwwLjkybC0wLjAxMiw1LjU2M2MwLDAsNS43NjIsMCw2LjY2NywwICAgYzAuNzQ5LDAsMC43MTUtMC43NTIsMC43MTUtMC43NTJWMTQuNDEzbC05LjM5Ni04LjM1OGwtOS45NzUsOC4zNThDMy42NzQsMTQuNDEzLDMuNjc0LDI0Ljg3NiwzLjY3NCwyNC44NzZ6IiBmaWxsPSIjZGZiY2I4IiBkYXRhLW9yaWdpbmFsPSIjMDMwMTA0IiBjbGFzcz0iIj48L3BhdGg+Cgk8cGF0aCBzdHlsZT0iIiBkPSJNMCwxMy42MzVjMCwwLDAuODQ3LDEuNTYxLDIuNjk0LDBsMTEuMDM4LTkuMzM4bDEwLjM0OSw5LjI4YzIuMTM4LDEuNTQyLDIuOTM5LDAsMi45MzksMCAgIEwxMy43MzIsMS41NEwwLDEzLjYzNXoiIGZpbGw9IiNkZmJjYjgiIGRhdGEtb3JpZ2luYWw9IiMwMzAxMDQiIGNsYXNzPSIiPjwvcGF0aD4KCTxwb2x5Z29uIHN0eWxlPSIiIHBvaW50cz0iMjMuODMsNC4yNzUgMjEuMTY4LDQuMjc1IDIxLjE3OSw3LjUwMyAyMy44Myw5Ljc1MiAgIiBmaWxsPSIjZGZiY2I4IiBkYXRhLW9yaWdpbmFsPSIjMDMwMTA0IiBjbGFzcz0iIj48L3BvbHlnb24+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPC9nPjwvc3ZnPg==" />
+    </a>
+  </div>
 
-    <input class="menu-icon" type="checkbox" id="menu-icon" name="menu-icon" />
-    <label for="menu-icon"></label>
-    <nav class="nav">
-        <ul class="pt-5 swing-in-top">
-            <!--<li><a href="index.html">Accueil</a></li>-->
-            <li><a href="../../index.html" class="deco">Accueil</a></li>
-            <li><a href="#" class="deco">Mes compétences</a></li>
-            <li><a href="parcours.html" class="deco">Mon parcours</a></li>
-        </ul>
-    </nav>
+  <input class="menu-icon" type="checkbox" id="menu-icon" name="menu-icon" />
+  <label for="menu-icon"></label>
+  <nav class="nav">
+    <ul class="pt-5 swing-in-top">
+      <!--<li><a href="index.html">Accueil</a></li>-->
+      <li><a href="../../index.html" class="deco">Accueil</a></li>
+      <li><a href="#" class="deco">Mes compétences</a></li>
+      <li><a href="parcours.html" class="deco">Mon parcours</a></li>
+    </ul>
+  </nav>
+  <!-- End Navbar-->
 
-    <!-- Footer -->
+  <!-- Cool Text
+  <div id="glow">
+    <ul class="ul_glow">
+      <li class="li_glow">
+        <input type="checkbox" />
+        <div class="div_glow">C</div>
+      </li>
+      <li class="li_glow">
+        <input type="checkbox" />
+        <div class="div_glow">O</div>
+      </li>
+      <li class="li_glow">
+        <input type="checkbox" />
+        <div class="div_glow">M</div>
+      </li>
+      <li class="li_glow">
+        <input type="checkbox" />
+        <div class="div_glow">P</div>
+      </li>
+      <li class="li_glow">
+        <input type="checkbox" />
+        <div class="div_glow">é</div>
+      </li>
+      <li class="li_glow">
+        <input type="checkbox" />
+        <div class="div_glow">T</div>
+      </li>
+      <li class="li_glow">
+        <input type="checkbox" />
+        <div class="div_glow">E</div>
+      </li>
+      <li class="li_glow">
+        <input type="checkbox" />
+        <div class="div_glow">N</div>
+      </li>
+      <li class="li_glow">
+        <input type="checkbox" />
+        <div class="div_glow">C</div>
+      </li>
+      <li class="li_glow">
+        <input type="checkbox" />
+        <div class="div_glow">E</div>
+      </li>
+      <li class="li_glow">
+        <input type="checkbox" />
+        <div class="div_glow">S</div>
+      </li>
+    </ul>
+  </div>
+   End Cool Text -->
 
-    <div class="footer-basic">
-        <footer>
-            <div class="social">
-                <a href="https://instagram.com/blue_sakura_13/" target="_blank"><i
-                        class="icon ion-social-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/léane-muller/" target="_blank"><i
-                        class="icon ion-social-linkedin"></i></a>
-                <a href="https://github.com/AyatoKirishima" target="_blank"><i class="icon ion-social-github"></i></a>
+  <!-- Responsive Slider -->
+  <div class="container">
+    <!--<h1 class="title">Responsive Slider Timeline</h1>-->
+    <div class="timeline">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <!--<div class="swiper-slide" style="background-image: url(https://unsplash.it/1920/500?image=11)"
+            data-year="2011">
+            <div class="swiper-slide-content"><span class="timeline-year">2011</span>
+              <h4 class="timeline-title">Our nice super title</h4>
+              <p class="timeline-text">Lorem ipsum dolor site amet, consectetur adipscing elit, sed do eisumod tempor
+                incididut ut labore et dolore magna aliqua. Ut enim ad mimim venjam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat.</p>
             </div>
-            <p class="copyright">MULLER Léane © 2021</p>
-        </footer>
+          </div>
+          <div class="swiper-slide" style="background-image: url(https://unsplash.it/1920/500?image=12)"
+            data-year="2012">
+            <div class="swiper-slide-content"><span class="timeline-year">2012</span>
+              <h4 class="timeline-title">Our nice super title</h4>
+              <p class="timeline-text">Lorem ipsum dolor site amet, consectetur adipscing elit, sed do eisumod tempor
+                incididut ut labore et dolore magna aliqua. Ut enim ad mimim venjam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+          </div>-->
+
+          <div class="swiper-slide" style="background-image: url(../img/iut.jpg)"
+            data-year="2020-2022">
+            <div class="swiper-slide-content"><span class="timeline-year">2020-2022</span>
+              <h4 class="timeline-title">DUT Informatique</h4>
+              <p class="timeline-text">IUT Metz / Saulcy, Metz
+                <br>
+                Apprentissage des bases de l'Informatique
+              </p>
+            </div>
+
+          </div>
+          <div class="swiper-slide" style="background-image: url(https://www.beegift.fr/public/images/upload/logo/logo_1362.jpg)"
+            data-year="2020">
+            <div class="swiper-slide-content"><span class="timeline-year">oct. 2020 – déc. 2020</span>
+              <h4 class="timeline-title">Emploi Etudiant</h4>
+              <p class="timeline-text">
+                La Coccinelle / Pont-à-Mousson
+                <br>
+                Aide à la vente, ressort des rayons, montages et retouches photos pour bannières Web</p>
+            </div>
+          </div>
+
+          <div class="swiper-slide" style="background-image: url(https://bocir-prod-bucket.s3.amazonaws.com/radios/directfm/importrk/news/original/5f059024782015.60407812.jpg)"
+            data-year="2017-2020">
+            <div class="swiper-slide-content"><span class="timeline-year">2017-2020</span>
+              <h4 class="timeline-title">Lycée Louis Vincent</h4>
+              <p class="timeline-text">Baccalauréat STI2D (EE)
+                <br>
+                Sciences et Technologies de l'Industrie et du Développement Durable (Energie Environnement)
+                <br>
+                Résultat obtenu 18.04/20 (Mention Très Bien)</p>
+            </div>
+          </div>
+
+          <div class="swiper-slide" style="background-image: url(https://cdn-s-www.republicain-lorrain.fr/images/CA5E69CF-1331-4BC4-A90C-A00F8D470121/MF_contenu/un-college-flambant-neuf-1430751378.jpg)"
+            data-year="2013-2017">
+            <div class="swiper-slide-content"><span class="timeline-year">2013-2017</span>
+              <h4 class="timeline-title">Collège Nelson Mandela</h4>
+              <p class="timeline-text">Diplôme national du brevet des collèges
+                <br>
+                Résultat obtenu :
+                Mention Très Bien</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-pagination"></div>
+      </div>
     </div>
+  </div>
+  <!-- End Responsive Slider -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js'></script>
+  <script src="../js/script.js"></script>
+
+  <!-- Footer -->
+
+  <div class="footer-basic">
+    <footer>
+      <div class="social">
+        <a href="https://instagram.com/blue_sakura_13/" target="_blank"><i class="icon ion-social-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/léane-muller/" target="_blank"><i class="icon ion-social-linkedin"></i></a>
+        <a href="https://github.com/AyatoKirishima" target="_blank"><i class="icon ion-social-github"></i></a>
+      </div>
+      <p class="copyright">MULLER Léane © 2021</p>
+    </footer>
+  </div>
+
 </body>
 
 </html>
