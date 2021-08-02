@@ -1,0 +1,33 @@
+body {
+  background: #000;
+}
+
+.neon {
+  font-family: "Monoton", cursive;
+  font-size: 130px;
+  color: #DFBCB8;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 400;
+  letter-spacing: 8px;
+  text-shadow: 1px 0px 4px #FFD5FF, 2px 0px 4px #FFD5FF, 3px 0px 4px #FFD5FF, 2px 0px 3px #A3A64E, 2px 3px 15px pink, 2px 0px 15px, 5px 0px 125px, 20px 0vw 200px #A3A64E, 40px 0vw 200px #A3A64E;
+}
+
+.flicker-slow {
+  animation: flicker 3s linear infinite;
+}
+
+.flicker-fast {
+  animation: flicker 1s linear infinite;
+}
+
+@keyframes flicker {
+  0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
+    opacity: 0.99;
+  }
+  20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
+    opacity: 0.4;
+  }
+}
