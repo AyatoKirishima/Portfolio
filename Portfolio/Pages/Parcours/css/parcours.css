@@ -654,6 +654,7 @@ body {
   }
 }
 
+/* PHONE VERSION BUT DOESN'T WORK
 @media screen and (min-width: 1024px) {
   .timeline .swiper-slide::after {
     right: -20%;
@@ -665,7 +666,7 @@ body {
   .timeline .swiper-slide-content {
     right: 25%;
   }
-}
+}*/
 
 /* Footer */
 
