@@ -363,7 +363,7 @@ html {
   opacity: 50%;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .geode2 {
     visibility: hidden;
   }
