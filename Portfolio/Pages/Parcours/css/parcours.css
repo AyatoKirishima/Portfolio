@@ -14,7 +14,7 @@
 /* Général */
 
 body {
-  overflow-x: hidden;
+  /*overflow-x: hidden;*/
   margin: 0px;
   /*background-color: red;*/
 }
@@ -363,12 +363,6 @@ html {
   opacity: 50%;
 }
 
-@media (max-width: 800px) {
-  .geode2 {
-    visibility: hidden;
-  }
-}
-
 /* Fin Images décoratives */
 
 .container {
@@ -428,6 +422,7 @@ html {
   top: 0;
   width: 100%;
   display: block;
+  overflow: hidden;
   /*transform: translateY(-50%);*/
 }
 
