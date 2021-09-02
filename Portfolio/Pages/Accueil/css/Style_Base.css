@@ -9,7 +9,7 @@
     --green: #A3A64E!important;
     --menu: #3F3F3F!important;
     /*#353746*/
-  }
+}
 
 /* Bebas Font */
 
@@ -746,6 +746,7 @@ section.parallax {
 .intro-bg {
     background-image: url('../images/infos.jpg');
 }
+
 .sec2-bg {
     background-image: url('https://picsum.photos/id/1/1200/800');
 }
