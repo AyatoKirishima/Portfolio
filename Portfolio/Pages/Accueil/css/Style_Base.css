@@ -107,7 +107,7 @@ html {
     z-index: 9;
     overflow: hidden;
     box-shadow: 0 8px 30px 0 rgba(0, 0, 0, 0.3);
-    background-color: #353746;
+    background-color: var(--menu);
     animation: border-transform 7s linear infinite;
     transition: top 350ms 1100ms cubic-bezier(0.23, 1, 0.32, 1), right 350ms 1100ms cubic-bezier(0.23, 1, 0.32, 1), transform 250ms 1100ms ease, width 650ms 400ms cubic-bezier(0.23, 1, 0.32, 1), height 650ms 400ms cubic-bezier(0.23, 1, 0.32, 1);
 }
@@ -219,7 +219,7 @@ html {
     margin-top: -1vh;
     width: 0;
     left: 0;
-    background-color: #353746;
+    background-color: var(--menu);
     opacity: 0.8;
     transition: width 250ms linear;
 }
@@ -912,7 +912,7 @@ section.parallax {
 
 footer.footer {
     line-height: 100px;
-    background-color: #333333;
+    background-color: var(--primary);
     color: #808080;
     text-align: center;
 }
@@ -1024,7 +1024,7 @@ footer.footer {
     color: #4b4c4d;
     Dark mode : */
     color: #f0f9ff;
-    background-color: #282d32;
+    background-color: var(--primary);
 }
 
 .footer-basic ul {
