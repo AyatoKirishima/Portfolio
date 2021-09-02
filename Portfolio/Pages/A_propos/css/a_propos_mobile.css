@@ -334,7 +334,7 @@ html {
 
 body {
   overflow: hidden;
-  background: var(--primary) url("../images/monstera.jpg") no-repeat center center fixed;
+  background: var(--primary) url("../images/bkg.jpg") no-repeat center center fixed;
   background-size: cover;
   position: fixed;
   padding: 0px;
