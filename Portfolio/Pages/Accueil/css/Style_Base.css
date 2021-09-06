@@ -401,7 +401,7 @@ html {
 /* Bouton se "remplissant" */
 
 .button {
-    background: linear-gradient(to right, rgba(63, 63, 63, 0.7) 50%, rgba(255, 255, 255, 0.7) 50%);
+    background: linear-gradient(to right, rgba(41, 43, 44, 0.7) 50%, rgba(242, 242, 242, 0.7) 50%);
     background-size: 200% 100%;
     background-position: right bottom;
     transition: all .5s ease-out;
@@ -427,13 +427,13 @@ html {
 .button:hover {
     background-position: left bottom;
     text-decoration: none;
-    color: white;
+    color: var(--white);
 }
 
 /* Titre */
 
 .hero-title {
-    color: white;
+    color: var(--white);
     font-family: 'Bebas Neue', cursive;
     font-size: 10vw;
     font-weight: 0;
@@ -459,7 +459,7 @@ html {
 }
 
 .main-content p {
-    color: #25373D;
+    color: var(--primary);
     font-family: "Playfair Display", serif;
     font-size: 18px;
     line-height: 1.5;
