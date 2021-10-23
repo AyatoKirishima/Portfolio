@@ -59,8 +59,8 @@ html {
     z-index: 20;
     top: 0;
     left: 0;
-    border-top: 2px solid #ececee;
-    border-bottom: 2px solid #ececee;
+    border-top: 2px solid var(--white);
+    border-bottom: 2px solid var(--white);
     transition: border-width 100ms 1500ms ease, top 100ms 1600ms cubic-bezier(0.23, 1, 0.32, 1), height 100ms 1600ms cubic-bezier(0.23, 1, 0.32, 1), background-color 200ms ease, transform 200ms cubic-bezier(0.23, 1, 0.32, 1);
 }
 
@@ -189,6 +189,20 @@ html {
 
 .nav ul li:nth-child(4) {
     transition-delay: 50ms;
+}
+
+/* Infos */
+
+.info {
+    position: fixed;
+    display: block;
+    bottom: 5%;
+    left: 3%;
+    z-index: 99999;
+    width: 45px;
+    height: auto;
+    margin: 10px;
+    opacity: 90%;
 }
 
 /* Police */
@@ -632,7 +646,7 @@ html {
     /*text-stroke-color: 1.5px #000;*/
     -moz-text-stroke-color: 1.5px #000;
     -webkit-text-stroke-color: 1.5px #000;
-    color: #FFF;
+    color: var(--white);
     text-shadow: 6px 0px 0px rgba(255, 255, 255, 0.3);
 }
 
@@ -647,7 +661,7 @@ html {
         /*text-stroke-color: 1px #000;*/
         -moz-text-stroke-color: 1px #000;
         -webkit-text-stroke-color: 1px #000;
-        color: #FFF;
+        color: var(--white);
         text-shadow: 3px 0px 0px rgba(255, 255, 255, 0.3);
     }
 }
@@ -679,7 +693,7 @@ html {
 
 .video-background-controls button:hover {
     opacity: 1;
-    color: #FFF;
+    color: var(--white);
 }
 
 iframe {
@@ -706,7 +720,7 @@ section.sec-blank {
 
 section.parallax {
     position: relative;
-    color: #FFF;
+    color: var(--white);
     padding: 130px 0;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
     position: relative;
@@ -717,7 +731,7 @@ section.parallax {
 }
 
 .flatbox {
-    background-color: #eee;
+    background-color: var(--white);
     text-align: center;
     background-size: cover;
     -webkit-background-size: cover;
@@ -727,7 +741,7 @@ section.parallax {
 }
 
 .sec-blank h1 {
-    color: #FFF
+    color: var(--white);
 }
 
 .sec-blank h1, .parallax h1 {
@@ -776,7 +790,7 @@ section.parallax {
 
 .nav-scrollspy>li>a:hover, .nav-scrollspy>li>a:focus {
     text-decoration: none;
-    background-color: #eee;
+    background-color: var(--white);
 }
 
 .nav-scrollspy>li.disabled>a {
@@ -815,7 +829,7 @@ section.parallax {
 .fixed-side-navbar:hover {
     background-color: #F1F1F1;
     border: 1px solid #ECECEC;
-    outline: 1px solid #FFFFFF;
+    outline: 1px solid var(--white);
     outline-offset: -3px;
     /* box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1); */
     /* -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1); */
