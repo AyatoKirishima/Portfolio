@@ -350,12 +350,15 @@ table {
     /* centrer le tableau */
     margin-left: auto;
     margin-right: auto;
+    color: var(--primary);
 }
 
 th, td {
-    border: 2px solid darkgray;
+    border: 2px solid var(--primary);
     padding: 10px;
 }
+
+
 
 /* Footer */
 
