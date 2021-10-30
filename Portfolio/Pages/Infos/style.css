@@ -346,6 +346,9 @@ table {
     border-collapse: collapse;
     margin: 25px;
     text-align: center;
+    /* centrer le tableau */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 th, td {
