@@ -58,7 +58,7 @@ html {
     left: 50px;
     z-index: 50;
     /* Animation */
-    animation: swing-in-top .5s cubic-bezier(.175, .885, .32, 1.275) 4s both
+    /* animation: swing-in-top .5s cubic-bezier(.175, .885, .32, 1.275) 1s both */
 }
 
 .logo img {
@@ -358,7 +358,18 @@ th, td {
     padding: 10px;
 }
 
+.dl {
+    color: var(--menu);
+}
 
+.dl:hover {
+    color: var(--green);
+    /* text-decoration: none; */
+}
+
+.dl:active {
+    color: var(--pink);
+}
 
 /* Footer */
 
