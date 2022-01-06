@@ -66,22 +66,22 @@ Feuilles de style "responsive" :
         </ul>
     </nav>
 
-    <!-- Infos & popup -->
-
-    <a href="Infos/infos.html"><img class="info" src="Icons/info.png" alt="Info Icon"></a>
+    <!-- Infos & tooltip -->
+        <a href="Infos/infos.html"><img class="info" src="Icons/info.png" alt="Info Icon"data-bs-toggle="tooltip" data-bs-placement="right" title="Documents à télécharger"></a>
+    <!-- End Infos & tooltip -->
 
     <!-- Bannière -->
-
-    <section class="hero image-as-background" style="background-image: url(https://images.pexels.com/photos/4210784/pexels-photo-4210784.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260) ;">
+    <section class="hero image-as-background"
+        style="background-image: url(https://images.pexels.com/photos/4210784/pexels-photo-4210784.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260) ;">
         <!-- url('https://images.unsplash.com/photo-1443890923422-7819ed4101c0?crop=entropy&dpr=2&fit=crop&fm=jpg&h=700&ixjsv=2.1.0&ixlib=rb-0.3.5&q=50&w=1300') -->
         <div class="hero-container">
             <p class="animate fadeInLeft delay-400">MULLER Léane</p>
             <h1 class="hero-title animate fadeInLeft delay-600">Bienvenue sur mon Portfolio</h1>
-            <a href="#Continuer" class="hero-button animate fadeInLeft delay-800 button" title="Click to see more">Commencer
-                la
-                visite</a>
+            <a href="#Continuer" class="hero-button animate fadeInLeft delay-800 button"
+                title="Click to see more">Commencer la visite</a>
         </div>
     </section>
+    <!-- End Bannière -->
 
     <a id="Continuer"></a>
     <!-- Scrollspy custom -->
@@ -93,31 +93,28 @@ Feuilles de style "responsive" :
     <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css' rel='stylesheet'>
     </link>
     <!-- Bootstrap 4.5.2 CSS (Startup4) -->
-    <link crossorigin='anonymous' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css' integrity='sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z' rel='stylesheet'>
+    <link crossorigin='anonymous' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css'
+        integrity='sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z' rel='stylesheet'>
     </link>
     <!-- Smooth Scroll -->
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/1.5.4/jquery.smooth-scroll.min.js' type='text/javascript'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/1.5.4/jquery.smooth-scroll.min.js'
+        type='text/javascript'></script>
 
 
 
     <!-- Scrollspy Page_START -->
     <!-- Hero Video -->
     <section id="hero-video" class="overlay">
-        <!-- parallax_START =========================== -->
+        <!-- parallax_START -->
         <div class="flatbox parallax intro-bg overlay">
             <div class="content-s">
                 <div class="inner-s">
                     <h1>👇 Découvrir mon profil 👇</h1>
                 </div>
             </div>
-
-            <!--<script type="text/javascript">
-        jQuery(document).ready(function () {
-          jQuery('[data-youtube]').youtube_background();
-        });
-      </script>-->
-            <!-- parallax_END =========================== -->
+            <!-- parallax_END -->
     </section>
+
     <!-- 提供選擇性遮蓋影片背景 -->
     <section id="sec1" class="sec-blank">
         <div class="container-fluid">
@@ -191,41 +188,7 @@ Feuilles de style "responsive" :
     <!-- partial -->
     <script src="Accueil/js/scrollspy_custom.js"></script>
 
-
-    <!-- Random text 
-
-  <article>
-    <h1>Random Title</h1>
-    <h2>Random subtitle</h2>
-    <p>Random Text since idk what to write here</p>
-    <p>Et quoniam mirari posse quosdam peregrinos existimo haec lecturos forsitan, si contigerit, quamobrem cum oratio
-      ad ea monstranda deflexerit quae Romae gererentur, nihil praeter seditiones narratur et tabernas et vilitates
-      harum similis alias, summatim causas perstringam nusquam a veritate sponte propria digressurus.</p>
-    <p>Et quoniam mirari posse quosdam peregrinos existimo haec lecturos forsitan, si contigerit, quamobrem cum oratio
-      ad ea monstranda deflexerit quae Romae gererentur, nihil praeter seditiones narratur et tabernas et vilitates
-      harum similis alias, summatim causas perstringam nusquam a veritate sponte propria digressurus.</p>
-    <p>Et quoniam mirari posse quosdam peregrinos existimo haec lecturos forsitan, si contigerit, quamobrem cum oratio
-      ad ea monstranda deflexerit quae Romae gererentur, nihil praeter seditiones narratur et tabernas et vilitates
-      harum similis alias, summatim causas perstringam nusquam a veritate sponte propria digressurus.</p>
-  </article>
-
-  <article>
-    <h1>Random Title</h1>
-    <h2>Random subtitle</h2>
-    <p>Random Text since idk what to write here</p>
-    <p>Et quoniam mirari posse quosdam peregrinos existimo haec lecturos forsitan, si contigerit, quamobrem cum oratio
-      ad ea monstranda deflexerit quae Romae gererentur, nihil praeter seditiones narratur et tabernas et vilitates
-      harum similis alias, summatim causas perstringam nusquam a veritate sponte propria digressurus.</p>
-    <p>Et quoniam mirari posse quosdam peregrinos existimo haec lecturos forsitan, si contigerit, quamobrem cum oratio
-      ad ea monstranda deflexerit quae Romae gererentur, nihil praeter seditiones narratur et tabernas et vilitates
-      harum similis alias, summatim causas perstringam nusquam a veritate sponte propria digressurus.</p>
-    <p>Et quoniam mirari posse quosdam peregrinos existimo haec lecturos forsitan, si contigerit, quamobrem cum oratio
-      ad ea monstranda deflexerit quae Romae gererentur, nihil praeter seditiones narratur et tabernas et vilitates
-      harum similis alias, summatim causas perstringam nusquam a veritate sponte propria digressurus.</p>
-  </article>-->
-
     <!-- Footer -->
-
     <div class="footer-basic">
         <footer>
             <div class="social">
@@ -239,6 +202,7 @@ Feuilles de style "responsive" :
             <p class="copyright">MULLER Léane © 2021</p>
         </footer>
     </div>
+    <!-- End Footer -->
 </body>
 
 </html>
