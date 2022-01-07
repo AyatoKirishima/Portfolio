@@ -506,6 +506,13 @@ html {
 
 /* Fin Entête */
 
+
+/* Card */
+.card .card-header {
+  background-color: var(--pink);
+}
+/* End Card */
+
 /* Footer */
 .footer-basic {
   padding: 40px 0;
