@@ -15,7 +15,7 @@
 body {
   /*overflow-x: hidden;*/
   margin: 0px;
-  /*background-color: red;*/
+  background-color: var(--white);
 }
 
 /* Soft scroll */
@@ -508,8 +508,25 @@ html {
 
 
 /* Card */
+.card {
+  padding-right: 10vw;
+  padding-left: 10vw;
+  padding-bottom: 5vw;
+}
+
 .card .card-header {
   background-color: var(--pink);
+}
+
+.card .card-body {
+  background-color: white;
+}
+
+@media screen and (max-width: 991px) {
+  .card {
+    padding-right: 10%;
+    padding-left: 10%;
+  }
 }
 /* End Card */
 
