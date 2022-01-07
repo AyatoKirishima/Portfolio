@@ -512,6 +512,7 @@ html {
   padding-right: 10vw;
   padding-left: 10vw;
   padding-bottom: 5vw;
+  border: none!important;
 }
 
 .card .card-header {
@@ -522,10 +523,20 @@ html {
   background-color: white;
 }
 
+.card a {
+  text-decoration: none;
+  color: var(--green);
+}
+
+.card a:hover {
+  /* text-decoration: none; */
+  color: var(--pink);
+}
+
 @media screen and (max-width: 991px) {
   .card {
-    padding-right: 10%;
-    padding-left: 10%;
+    padding-right: 20%;
+    padding-left: 20%;
   }
 }
 /* End Card */
