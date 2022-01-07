@@ -1,13 +1,13 @@
 /* Couleurs Charte Graphique */
 
 :root {
-  --primary: #292b2c!important;
-  --white: #F2F2F2!important;
-  --light_gray: #DBDAC6!important;
-  --gray: #9B9187!important;
-  --pink: #DFBCB8!important;
-  --green: #A3A64E!important;
-  --menu: #3F3F3F!important;
+  --primary: #292b2c !important;
+  --white: #F2F2F2 !important;
+  --light_gray: #DBDAC6 !important;
+  --gray: #9B9187 !important;
+  --pink: #DFBCB8 !important;
+  --green: #A3A64E !important;
+  --menu: #3F3F3F !important;
   /*#353746*/
 }
 
@@ -41,6 +41,7 @@ html {
     transform-origin: top;
     opacity: 0
   }
+
   100% {
     transform: rotateX(0deg);
     transform-origin: top;
@@ -83,9 +84,11 @@ html {
   0% {
     opacity: 0;
   }
+
   50% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
@@ -182,21 +185,27 @@ html {
   0%, 100% {
     border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%;
   }
+
   14% {
     border-radius: 40% 60% 54% 46% / 49% 60% 40% 51%;
   }
+
   28% {
     border-radius: 54% 46% 38% 62% / 49% 70% 30% 51%;
   }
+
   42% {
     border-radius: 61% 39% 55% 45% / 61% 38% 62% 39%;
   }
+
   56% {
     border-radius: 61% 39% 67% 33% / 70% 50% 50% 30%;
   }
+
   70% {
     border-radius: 50% 50% 34% 66% / 56% 68% 32% 44%;
   }
+
   84% {
     border-radius: 46% 54% 50% 50% / 35% 61% 39% 65%;
   }
@@ -323,12 +332,15 @@ html {
   .menu-icon:checked+label, .menu-icon:not(:checked)+label {
     right: 55px;
   }
+
   .logo {
     left: 30px;
   }
+
   .nav {
     right: 30px;
   }
+
   h1 {
     font-size: 9vw;
     -webkit-text-stroke: 2px transparent;
@@ -337,6 +349,7 @@ html {
     /*text-fill-color: #ffeba7;
       color: var(--test);*/
   }
+
   .nav ul li a {
     font-size: 8vh;
   }
@@ -353,7 +366,7 @@ html {
   left: -100px;
   opacity: 50%;
   max-width: 100%;
-    height: auto;
+  height: auto;
 }
 
 .geode2 {
@@ -458,12 +471,15 @@ html {
   0%, 100% {
     background-image: url('https://images.pexels.com/photos/3695378/pexels-photo-3695378.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
   }
+
   25% {
     background-image: url('https://images.pexels.com/photos/414660/pexels-photo-414660.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
   }
+
   50% {
     background-image: url('https://images.pexels.com/photos/4622244/pexels-photo-4622244.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
   }
+
   75% {
     background-image: url('https://images.pexels.com/photos/4623060/pexels-photo-4623060.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
   }
@@ -764,6 +780,7 @@ body {
     height: 50%;
     box-shadow: -230px 0 150px 50vw rgba(0, 0, 0, 0.7);
   }
+
   .timeline .swiper-slide-content {
     right: 30%;
     top: 50%;
@@ -772,32 +789,39 @@ body {
     font-size: 11px;
     text-align: right;
   }
+
   .timeline .swiper-slide .timeline-year {
     margin-bottom: 0;
     font-size: 32px;
   }
+
   .timeline .swiper-slide .timeline-title {
     font-size: 46px;
     margin: 0;
   }
+
   .timeline .swiper-pagination {
     display: flex;
   }
+
   .timeline .swiper-button-prev {
     top: 15%;
     left: auto;
     right: 15%;
     transform: rotate(90deg) translate(0, 10px);
   }
+
   .timeline .swiper-button-prev:hover {
     transform: rotate(90deg) translate(-3px, 10px);
   }
+
   .timeline .swiper-button-next {
     top: auto;
     bottom: 15%;
     right: 15%;
     transform: rotate(90deg) translate(0, 10px);
   }
+
   .timeline .swiper-button-next:hover {
     transform: rotate(90deg) translate(3px, 10px);
   }
