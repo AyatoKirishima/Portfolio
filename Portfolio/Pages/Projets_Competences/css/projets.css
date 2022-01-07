@@ -522,6 +522,7 @@ html {
   padding-left: 10vw;
   padding-bottom: 5vw;
   border: none!important;
+  background: var(--white)!important;
 }
 
 .card .card-header {
