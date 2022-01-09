@@ -634,6 +634,11 @@ html {
   color: var(--pink);
 }
 
+.card .card-footer  {
+  background-color: rgba(255, 255, 255, 0.6)!important;
+  color: var(--menu)!important;
+}
+
 @media screen and (max-width: 991px) {
   .card {
     padding-right: 20%;
