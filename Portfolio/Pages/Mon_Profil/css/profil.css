@@ -16,9 +16,12 @@ body {
   /*overflow-x: hidden;*/
   margin: 0px;
   background-image: url("../img/magnolia.jpg");
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
+  background-position: center;
+  /* Center the image */
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
+  background-size: cover;
+  /* Resize the background image to cover the entire container */
   background-attachment: fixed;
   background-color: var(--white);
 }
@@ -361,6 +364,19 @@ html {
 
 /* End Menu */
 
+/* Insta preview */
+.preview--insta {
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (min-width: 991px) {
+  .preview--insta {
+    display:none;
+  }
+}
+
+/* End Insta preview */
 
 /* Entête */
 .title {
@@ -372,93 +388,95 @@ html {
   margin-bottom: 0;
   font-size: 3rem;
 }
+
 /* Fin Entête */
 
 /* Back to the top indicator */
 .progress-wrap {
-	position: fixed;
-	right: 50px;
-	bottom: 50px;
-	height: 46px;
-	width: 46px;
-	cursor: pointer;
-	display: block;
-	border-radius: 50px;
-	box-shadow: inset 0 0 0 2px var(--pink);
-	z-index: 10000;
-	opacity: 0;
-	visibility: hidden;
-	transform: translateY(15px);
-	-webkit-transition: all 200ms linear;
-	transition: all 200ms linear;
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  height: 46px;
+  width: 46px;
+  cursor: pointer;
+  display: block;
+  border-radius: 50px;
+  box-shadow: inset 0 0 0 2px var(--pink);
+  z-index: 10000;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(15px);
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
 }
 
 .progress-wrap.active-progress {
-	opacity: 1;
-	visibility: visible;
-	transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
 }
 
 .progress-wrap::after {
-	position: absolute;
-	font-family: 'unicons';
-	content: '\e84b';
-	text-align: center;
-	line-height: 46px;
-	font-size: 24px;
-	color: var(--pink);
-	left: 0;
-	top: 0;
-	height: 46px;
-	width: 46px;
-	cursor: pointer;
-	display: block;
-	z-index: 1;
-	-webkit-transition: all 200ms linear;
-	transition: all 200ms linear;
+  position: absolute;
+  font-family: 'unicons';
+  content: '\e84b';
+  text-align: center;
+  line-height: 46px;
+  font-size: 24px;
+  color: var(--pink);
+  left: 0;
+  top: 0;
+  height: 46px;
+  width: 46px;
+  cursor: pointer;
+  display: block;
+  z-index: 1;
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
 }
 
 .progress-wrap:hover::after {
-	opacity: 0;
+  opacity: 0;
 }
 
 .progress-wrap::before {
-	position: absolute;
-	font-family: 'unicons';
-	content: '\e84b';
-	text-align: center;
-	line-height: 46px;
-	font-size: 24px;
-	opacity: 0;
-	background-image: linear-gradient(298deg, var(--pink), var(--green));
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	left: 0;
-	top: 0;
-	height: 46px;
-	width: 46px;
-	cursor: pointer;
-	display: block;
-	z-index: 2;
-	-webkit-transition: all 200ms linear;
-	transition: all 200ms linear;
+  position: absolute;
+  font-family: 'unicons';
+  content: '\e84b';
+  text-align: center;
+  line-height: 46px;
+  font-size: 24px;
+  opacity: 0;
+  background-image: linear-gradient(298deg, var(--pink), var(--green));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  left: 0;
+  top: 0;
+  height: 46px;
+  width: 46px;
+  cursor: pointer;
+  display: block;
+  z-index: 2;
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
 }
 
 .progress-wrap:hover::before {
-	opacity: 1;
+  opacity: 1;
 }
 
 .progress-wrap svg path {
-	fill: none;
+  fill: none;
 }
 
 .progress-wrap svg.progress-circle path {
-	stroke: var(--green);
-	stroke-width: 4;
-	box-sizing: border-box;
-	-webkit-transition: all 200ms linear;
-	transition: all 200ms linear;
+  stroke: var(--green);
+  stroke-width: 4;
+  box-sizing: border-box;
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
 }
+
 /* Back to the top indicator */
 
 /* Card */
@@ -466,8 +484,8 @@ html {
   padding-right: 10vw;
   padding-left: 10vw;
   padding-bottom: 5vw;
-  border: none!important;
-  background: transparent!important;
+  border: none !important;
+  background: transparent !important;
 }
 
 .card .card-header {
@@ -488,9 +506,9 @@ html {
   color: var(--pink);
 }
 
-.card .card-footer  {
-  background-color: rgba(255, 255, 255, 0.6)!important;
-  color: var(--menu)!important;
+.card .card-footer {
+  background-color: rgba(255, 255, 255, 0.6) !important;
+  color: var(--menu) !important;
 }
 
 @media screen and (max-width: 991px) {
@@ -499,6 +517,7 @@ html {
     padding-left: 20%;
   }
 }
+
 /* End Card */
 
 /* Footer */
