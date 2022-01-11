@@ -103,6 +103,10 @@ html {
 /* FinBarre de navigation */
 
 /* Menu */
+.here {
+  color: var(--green) !important;
+}
+
 .deco {
   text-decoration: none;
 }
@@ -372,7 +376,7 @@ html {
 
 @media screen and (min-width: 991px) {
   .preview--insta {
-    display:none;
+    display: none;
   }
 }
 
