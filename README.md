@@ -6,7 +6,7 @@
 [![forthebadge](https://forthebadge.com/images/badges/uses-css.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/uses-js.svg)](https://forthebadge.com)
 
-# Portofolio
+# Portfolio
 Création d'un portfolio présentant mes projets
 
 [1e Version](https://mullerleane.vsble.me)
