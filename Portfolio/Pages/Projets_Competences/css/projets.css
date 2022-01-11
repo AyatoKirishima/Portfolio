@@ -104,6 +104,10 @@ html {
   text-decoration: none;
 }
 
+.here {
+  color: var(--green) !important;
+}
+
 [type="checkbox"]:checked, [type="checkbox"]:not(:checked) {
   position: absolute;
   left: -9999px;
