@@ -660,6 +660,9 @@ html {
   Dark mode : */
   color: var(--white);
   background-color: var(--primary);
+  bottom: 0%;
+  position:absolute;
+  width: 100%;
 }
 
 .footer-basic ul {
