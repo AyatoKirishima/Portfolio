@@ -1048,7 +1048,7 @@ footer.footer {
     background-color: var(--primary);
     bottom: 0%;
     width: 100%;
-    position:fixed;
+    /* position:fixed; */
 }
 
 .footer-basic ul {
