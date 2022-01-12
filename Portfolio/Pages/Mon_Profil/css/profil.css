@@ -534,7 +534,7 @@ html {
   color: var(--white);
   background-color: var(--primary);
   bottom: 0%;
-  position:absolute;
+  /* position:absolute; */
   width: 100%;
 }
 
