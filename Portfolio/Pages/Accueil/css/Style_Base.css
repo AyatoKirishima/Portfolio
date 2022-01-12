@@ -1049,6 +1049,7 @@ footer.footer {
     bottom: 0%;
     position:absolute;
     width: 100%;
+    position:fixed;
 }
 
 .footer-basic ul {
