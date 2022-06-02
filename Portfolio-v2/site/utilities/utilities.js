@@ -93,12 +93,6 @@ class Header extends HTMLElement {
                                 <ul class="rd-navbar-contacts-2">
                                     <li>
                                         <div class="unit unit-spacing-xs">
-                                            <div class="unit-left"><span class="icon mdi mdi-phone"></span></div>
-                                            <div class="unit-body"><a class="phone" href="tel:#">+1 718-999-3939</a></div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="unit unit-spacing-xs">
                                             <div class="unit-left"><span class="icon mdi mdi-map-marker"></span></div>
                                             <div class="unit-body"><a class="address" href="#">France</a></div>
                                         </div>
@@ -122,18 +116,15 @@ class Header extends HTMLElement {
                             <div class="rd-navbar-main">
                                 <!-- RD Navbar Nav-->
                                 <ul class="rd-navbar-nav">
-                                    <li class="rd-nav-item active"><a class="rd-nav-link" href="index.html">Home</a>
+                                    <li class="rd-nav-item active"><a class="rd-nav-link" href="index.html">Accueil</a>
                                     </li>
                                     <li class="rd-nav-item"><a class="rd-nav-link" href="about-us.html">A propos</a>
                                     </li>
-                                    <li class="rd-nav-item"><a class="rd-nav-link" href="typography.html">Typography</a>
-                                    </li>
-                                    <li class="rd-nav-item"><a class="rd-nav-link" href="contacts.html">Contacts</a>
-                                    </li>
+
                                 </ul>
                             </div>
                         </div>
-                        <div class="rd-navbar-project-hamburger rd-navbar-project-hamburger-open rd-navbar-fixed-element-1" data-multitoggle=".rd-navbar-inner" data-multitoggle-blur=".rd-navbar-wrap" data-multitoggle-isolate="data-multitoggle-isolate">
+                        <!--<div class="rd-navbar-project-hamburger rd-navbar-project-hamburger-open rd-navbar-fixed-element-1" data-multitoggle=".rd-navbar-inner" data-multitoggle-blur=".rd-navbar-wrap" data-multitoggle-isolate="data-multitoggle-isolate">
                             <div class="project-hamburger"><span class="project-hamburger-arrow"></span><span class="project-hamburger-arrow"></span><span class="project-hamburger-arrow"></span>
                             </div>
                         </div>
@@ -148,7 +139,6 @@ class Header extends HTMLElement {
                                 <div>
                                     <div class="row gutters-20" data-lightgallery="group">
                                         <div class="col-6">
-                                            <!-- Thumbnail Creative-->
                                             <article class="thumbnail thumbnail-creative">
                                                 <a href="images/project-1-1200x800-original.jpg" data-lightgallery="item">
                                                     <div class="thumbnail-creative-figure"><img src="images/project-1-195x164.jpg" alt="" width="195" height="164" />
@@ -158,7 +148,6 @@ class Header extends HTMLElement {
                                             </article>
                                         </div>
                                         <div class="col-6">
-                                            <!-- Thumbnail Creative-->
                                             <article class="thumbnail thumbnail-creative">
                                                 <a href="images/project-2-1200x800-original.jpg" data-lightgallery="item">
                                                     <div class="thumbnail-creative-figure"><img src="images/project-2-195x164.jpg" alt="" width="195" height="164" />
@@ -168,7 +157,6 @@ class Header extends HTMLElement {
                                             </article>
                                         </div>
                                         <div class="col-6">
-                                            <!-- Thumbnail Creative-->
                                             <article class="thumbnail thumbnail-creative">
                                                 <a href="images/project-3-1200x800-original.jpg" data-lightgallery="item">
                                                     <div class="thumbnail-creative-figure"><img src="images/project-3-195x164.jpg" alt="" width="195" height="164" />
@@ -178,7 +166,6 @@ class Header extends HTMLElement {
                                             </article>
                                         </div>
                                         <div class="col-6">
-                                            <!-- Thumbnail Creative-->
                                             <article class="thumbnail thumbnail-creative">
                                                 <a href="images/project-4-1200x800-original.jpg" data-lightgallery="item">
                                                     <div class="thumbnail-creative-figure"><img src="images/project-4-195x164.jpg" alt="" width="195" height="164" />
@@ -188,7 +175,6 @@ class Header extends HTMLElement {
                                             </article>
                                         </div>
                                         <div class="col-6">
-                                            <!-- Thumbnail Creative-->
                                             <article class="thumbnail thumbnail-creative">
                                                 <a href="images/project-5-1200x800-original.jpg" data-lightgallery="item">
                                                     <div class="thumbnail-creative-figure"><img src="images/project-5-195x164.jpg" alt="" width="195" height="164" />
@@ -198,7 +184,6 @@ class Header extends HTMLElement {
                                             </article>
                                         </div>
                                         <div class="col-6">
-                                            <!-- Thumbnail Creative-->
                                             <article class="thumbnail thumbnail-creative">
                                                 <a href="images/project-6-1200x800-original.jpg" data-lightgallery="item">
                                                     <div class="thumbnail-creative-figure"><img src="images/project-6-195x164.jpg" alt="" width="195" height="164" />
@@ -211,7 +196,7 @@ class Header extends HTMLElement {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div>-->
                 </div>
             </nav>
         </div>
