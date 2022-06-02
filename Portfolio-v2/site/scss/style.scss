@@ -1,5 +1,5 @@
 @charset "UTF-8";
-$primary : #9B9187;
+$primary : #636363;
 $accent1: #DFBCB8;
 $accent2 : #DBDAC6;
 $accent3 : #A3A64E;
@@ -7,6 +7,9 @@ $accent3 : #A3A64E;
 *
 * Contexts
 */
+html{
+	scroll-behavior: smooth;
+}
 a:focus,
 button:focus {
 	outline: none !important;
