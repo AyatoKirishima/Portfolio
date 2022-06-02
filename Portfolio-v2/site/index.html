@@ -20,7 +20,7 @@
         })(window, document, 'script', 'dataLayer', 'GTM-K9X74FD');
     </script>
     <!-- End Google Tag Manager -->
-    <title>Home</title>
+    <title>Accueil</title>
     <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -79,29 +79,30 @@
     <div class="page">
         <!-- Page Header-->
         <header-component></header-component>
+
         <!-- Swiper-->
         <section class="section swiper-container swiper-slider swiper-slider-2 swiper-slider-3" data-loop="true" data-autoplay="5000" data-simulate-touch="false" data-slide-effect="fade">
             <div class="swiper-wrapper text-sm-left">
-                <div class="swiper-slide context-dark" data-slide-bg="images/slide-1-1920x753.jpg">
+                <div class="swiper-slide context-dark" data-slide-bg="images/coffee-magnolia.jpg">
                     <div class="swiper-slide-caption section-md">
                         <div class="container">
                             <div class="row">
                                 <div class="col-sm-9 col-md-8 col-lg-7 col-xl-7 offset-lg-1 offset-xxl-0">
-                                    <h1 class="oh swiper-title"><span class="d-inline-block" data-caption-animate="slideInUp" data-caption-delay="0">Perfect pizza</span></h1>
-                                    <p class="big swiper-text" data-caption-animate="fadeInLeft" data-caption-delay="300">Experience the taste of a perfect pizza at PizzaHouse, one of the best restaurants!</p><a class="button button-lg button-primary button-winona button-shadow-2" href="#" data-caption-animate="fadeInUp" data-caption-delay="300">View our menu</a>
+                                    <h1 class="oh swiper-title"><span class="d-inline-block" data-caption-animate="slideInUp" data-caption-delay="0">A propos</span></h1>
+                                    <p class="big swiper-text" data-caption-animate="fadeInLeft" data-caption-delay="300"><mark> Plus d'informations, sur les compétences, le parcours ...ect</mark></p><a class="button button-lg button-primary button-winona button-shadow-2" href="about-us.html" data-caption-animate="fadeInUp" data-caption-delay="300">Voir plus</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="swiper-slide context-dark" data-slide-bg="images/slide-2-1920x753.jpg">
+                <div class="swiper-slide context-dark" data-slide-bg="images/book2-magnolia.jpg">
                     <div class="swiper-slide-caption section-md">
                         <div class="container">
                             <div class="row">
                                 <div class="col-sm-8 col-lg-7 offset-lg-1 offset-xxl-0">
                                     <h1 class="oh swiper-title"><span class="d-inline-block" data-caption-animate="slideInDown" data-caption-delay="0">Quality ingredients</span></h1>
-                                    <p class="big swiper-text" data-caption-animate="fadeInRight" data-caption-delay="300">We use only the best ingredients to make one-of-a-kind pizzas for our customers.</p>
-                                    <div class="button-wrap oh"><a class="button button-lg button-primary button-winona button-shadow-2" href="#" data-caption-animate="slideInUp" data-caption-delay="0">View our menu</a></div>
+                                    <p class="big swiper-text" data-caption-animate="fadeInRight" data-caption-delay="300"><mark>We use only the best ingredients to make one-of-a-kind pizzas for our customers.</mark></p>
+                                    <div class="button-wrap oh"><a class="button button-lg button-primary button-winona button-shadow-2" href="#projets" data-caption-animate="slideInUp" data-caption-delay="0">Voir les projets</a></div>
                                 </div>
                             </div>
                         </div>
@@ -127,7 +128,7 @@
         <!-- What We Offer-->
         <section class="section section-md bg-default">
             <div class="container">
-                <h3 class="oh-desktop"><span class="d-inline-block wow slideInDown">Our Menu</span></h3>
+                <h3 id="projets" class="oh-desktop"><span class="d-inline-block wow slideInDown">Domaines des projets</span></h3>
                 <div class="row row-md row-30">
                     <div class="col-sm-6 col-lg-4">
                         <div class="oh-desktop">
@@ -206,7 +207,23 @@
         </section>
 
         <!-- Section CTA-->
-        <section class="primary-overlay section parallax-container" data-parallax-img="images/bg-3.jpg">
+        <section class="primary-overlay section parallax-container" data-parallax-img="images/bg-4.jpg">
+            <div class="parallax-content section-xxl context-dark text-md-left">
+                <div class="container">
+                    <div class="row justify-content-end">
+                        <div class="col-sm-9 col-md-7 col-lg-5">
+                            <div class="cta-modern">
+                                <h3 class="cta-modern-title cta-modern-title-2 oh-desktop"><span class="d-inline-block wow fadeInLeft">-30% on all salads & drinks</span></h3>
+                                <p class="cta-modern-text cta-modern-text-2 oh-desktop" data-wow-delay=".1s"><span class="cta-modern-decor cta-modern-decor-2 wow slideInLeft"></span><span class="d-inline-block wow slideInUp">Taste some of the best PizzaHouse salads!</span></p><a class="button button-lg button-secondary button-winona wow fadeInRight"
+                                    href="contacts.html" data-wow-delay=".2s">contact us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Section CTA-->
+        <!-- <section class="primary-overlay section parallax-container" data-parallax-img="images/bg-3.jpg">
             <div class="parallax-content section-xl context-dark text-md-left">
                 <div class="container">
                     <div class="row justify-content-end">
@@ -220,15 +237,14 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <!-- Our Shop-->
-        <section class="section section-lg bg-default">
+        <!-- <section class="section section-lg bg-default">
             <div class="container">
                 <h3 class="oh-desktop"><span class="d-inline-block wow slideInUp">Selected Pizzas</span></h3>
                 <div class="row row-lg row-30">
                     <div class="col-sm-6 col-lg-4 col-xl-3">
-                        <!-- Product-->
                         <article class="product wow fadeInLeft" data-wow-delay=".15s">
                             <div class="product-figure"><img src="images/product-1-161x162.png" alt="" width="161" height="162" />
                             </div>
@@ -245,7 +261,6 @@
                         </article>
                     </div>
                     <div class="col-sm-6 col-lg-4 col-xl-3">
-                        <!-- Product-->
                         <article class="product wow fadeInLeft" data-wow-delay=".1s">
                             <div class="product-figure"><img src="images/product-2-161x162.png" alt="" width="161" height="162" />
                             </div>
@@ -262,7 +277,6 @@
                         </article>
                     </div>
                     <div class="col-sm-6 col-lg-4 col-xl-3">
-                        <!-- Product-->
                         <article class="product wow fadeInLeft" data-wow-delay=".05s">
                             <div class="product-figure"><img src="images/product-3-161x162.png" alt="" width="161" height="162" />
                             </div>
@@ -279,7 +293,6 @@
                         </article>
                     </div>
                     <div class="col-sm-6 col-lg-4 col-xl-3">
-                        <!-- Product-->
                         <article class="product wow fadeInLeft">
                             <div class="product-figure"><img src="images/product-4-161x162.png" alt="" width="161" height="162" />
                             </div>
@@ -298,33 +311,15 @@
                     </div>
                 </div>
             </div>
-        </section>
-
-        <!-- Section CTA-->
-        <section class="primary-overlay section parallax-container" data-parallax-img="images/bg-4.jpg">
-            <div class="parallax-content section-xxl context-dark text-md-left">
-                <div class="container">
-                    <div class="row justify-content-end">
-                        <div class="col-sm-9 col-md-7 col-lg-5">
-                            <div class="cta-modern">
-                                <h3 class="cta-modern-title cta-modern-title-2 oh-desktop"><span class="d-inline-block wow fadeInLeft">-30% on all salads & drinks</span></h3>
-                                <p class="cta-modern-text cta-modern-text-2 oh-desktop" data-wow-delay=".1s"><span class="cta-modern-decor cta-modern-decor-2 wow slideInLeft"></span><span class="d-inline-block wow slideInUp">Taste some of the best PizzaHouse salads!</span></p><a class="button button-lg button-secondary button-winona wow fadeInRight"
-                                    href="contacts.html" data-wow-delay=".2s">contact us</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        </section> -->
 
         <!-- What We Offer-->
-        <section class="section section-xl bg-default">
+        <!-- <section class="section section-xl bg-default">
             <div class="container">
                 <h3 class="wow fadeInLeft">What People Say</h3>
             </div>
             <div class="container container-style-1">
                 <div class="owl-carousel owl-style-12" data-items="1" data-sm-items="2" data-lg-items="3" data-margin="30" data-xl-margin="45" data-autoplay="true" data-nav="true" data-center="true" data-smart-speed="400">
-                    <!-- Quote Tara-->
                     <article class="quote-tara">
                         <div class="quote-tara-caption">
                             <div class="quote-tara-text">
@@ -336,7 +331,6 @@
                         <h6 class="quote-tara-author">Ashley Fitzgerald</h6>
                         <div class="quote-tara-status">Client</div>
                     </article>
-                    <!-- Quote Tara-->
                     <article class="quote-tara">
                         <div class="quote-tara-caption">
                             <div class="quote-tara-text">
@@ -348,7 +342,6 @@
                         <h6 class="quote-tara-author">Stephanie Williams</h6>
                         <div class="quote-tara-status">Client</div>
                     </article>
-                    <!-- Quote Tara-->
                     <article class="quote-tara">
                         <div class="quote-tara-caption">
                             <div class="quote-tara-text">
@@ -360,7 +353,6 @@
                         <h6 class="quote-tara-author">Bill Johnson</h6>
                         <div class="quote-tara-status">Client</div>
                     </article>
-                    <!-- Quote Tara-->
                     <article class="quote-tara">
                         <div class="quote-tara-caption">
                             <div class="quote-tara-text">
@@ -374,7 +366,7 @@
                     </article>
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <section class="section section-last bg-default">
             <div class="container-fluid container-inset-0 isotope-wrap">
@@ -468,7 +460,7 @@
         </section>
 
         <!-- Tell-->
-        <section class="section section-sm section-first bg-default">
+        <!-- <section class="section section-sm section-first bg-default">
             <div class="container">
                 <h3 class="heading-3">Book your Table</h3>
                 <form class="rd-form rd-mailform form-style-1" data-form-output="form-output-global" data-form-type="contact" method="post" action="bat/rd-mailform.php">
@@ -487,7 +479,7 @@
                         </div>
                         <div class="col-lg-4 oh-desktop">
                             <div class="form-wrap wow slideInDown">
-                                <!--Select 2-->
+
                                 <select class="form-input" data-minimum-results-for-search="Infinity" data-constraints="@Required">
                     <option value="1">Select a Service</option>
                     <option value="2">Dine-In</option>
@@ -505,7 +497,6 @@
                     </div>
                     <div class="group-custom-1 group-middle oh-desktop">
                         <button class="button button-lg button-primary button-winona wow fadeInRight" type="submit">Send message</button>
-                        <!-- Quote Classic-->
                         <article class="quote-classic quote-classic-3 wow slideInDown">
                             <div class="quote-classic-text">
                                 <p class="q">Please reserve your table at least 1 day in advance.</p>
@@ -514,10 +505,10 @@
                     </div>
                 </form>
             </div>
-        </section>
+        </section> -->
 
         <!-- Section Services  Last section-->
-        <section class="section section-sm bg-default">
+        <!-- <section class="section section-sm bg-default">
             <div class="container">
                 <div class="owl-carousel owl-style-11 dots-style-2" data-items="1" data-sm-items="1" data-lg-items="2" data-xl-items="4" data-margin="30" data-dots="true" data-mouse-drag="true" data-rtl="true">
                     <article class="box-icon-megan wow fadeInUp">
@@ -550,11 +541,11 @@
                     </article>
                 </div>
             </div>
-        </section>
-
+        </section> -->
+    </div>
         <!-- Page Footer -->
         <footer-component></footer-component>
-    </div>
+    
     <!-- Global Mailform Output-->
     <div class="snackbars" id="form-output-global"></div>
     <!-- Javascript-->
