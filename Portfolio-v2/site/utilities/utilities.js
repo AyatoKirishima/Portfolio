@@ -85,7 +85,7 @@ class Header extends HTMLElement {
                             <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
                             <!-- RD Navbar Brand-->
                             <div class="rd-navbar-brand">
-                                <a class="brand" href="index.html"><h5>MULLER Léane</h5></a>
+                                <a class="brand" href="index.html"><h5>Léane Muller</h5></a>
                             </div>
                         </div>
                         <div class="rd-navbar-right rd-navbar-nav-wrap">
