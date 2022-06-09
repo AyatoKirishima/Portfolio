@@ -36,16 +36,13 @@ class Footer extends HTMLElement {
                                 <div class="wow slideInRight">
                                     <ul class="list-inline footer-social-list footer-social-list-2 footer-social-list-3">
                                         <li>
-                                            <a class="icon mdi mdi-facebook" href="#"></a>
+                                            <a class="icon mdi mdi-linkedin" href="https://www.linkedin.com/in/leane-muller/" target="_blank"></a>
                                         </li>
                                         <li>
-                                            <a class="icon mdi mdi-twitter" href="#"></a>
+                                            <a class="icon mdi mdi-git" href="https://github.com/AyatoKirishima" target="_blank"></a>
                                         </li>
                                         <li>
-                                            <a class="icon mdi mdi-instagram" href="#"></a>
-                                        </li>
-                                        <li>
-                                            <a class="icon mdi mdi-google-plus" href="#"></a>
+                                            <a class="icon mdi mdi-instagram" href="https://www.instagram.com/blue_sakura_13/" target="_blank"></a>
                                         </li>
                                     </ul>
                                 </div>
@@ -100,16 +97,13 @@ class Header extends HTMLElement {
                                 </ul>
                                 <ul class="list-share-2">
                                     <li>
-                                        <a class="icon mdi mdi-facebook" href="#"></a>
+                                        <a class="icon mdi mdi-linkedin" href="https://www.linkedin.com/in/leane-muller/" target="_blank"></a>
                                     </li>
                                     <li>
-                                        <a class="icon mdi mdi-twitter" href="#"></a>
+                                        <a class="icon mdi mdi-git" href="https://github.com/AyatoKirishima" target="_blank"></a>
                                     </li>
                                     <li>
-                                        <a class="icon mdi mdi-instagram" href="#"></a>
-                                    </li>
-                                    <li>
-                                        <a class="icon mdi mdi-google-plus" href="#"></a>
+                                        <a class="icon mdi mdi-instagram" href="https://www.instagram.com/blue_sakura_13/" target="_blank"></a>
                                     </li>
                                 </ul>
                             </div>
