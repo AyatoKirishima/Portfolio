@@ -8,9 +8,11 @@
 
 Création d'un portfolio
 
-Version 1 : disponible en realease *(premier portfolio codé par mes soins lorsque que je débutais l'html et le css)*
+*On évoquera que la présence des portfolios précédents, réalisés à l'aide de CMS*
 
-Version 2 : [disponible ici](https://leane-muller-portfolio.netlify.app)
+Version 4 : disponible en realease *(premier portfolio codé par mes soins lorsque que je débutais l'html et le css)*
+
+Version 5 : [disponible ici](https://leane-muller-portfolio.netlify.app)
 
 -----------
 
