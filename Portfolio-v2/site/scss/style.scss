@@ -5,9 +5,12 @@ $accent2: #DBDAC6;
 $accent3: #A3A64E;
 
 /*
-*
 * Contexts
 */
+
+.dark {
+    color: $primary!important;
+}
 
 .badge-group {
     margin-bottom: 20px;
