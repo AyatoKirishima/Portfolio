@@ -1,4 +1,5 @@
 "use strict"
+
 // Footer
 class Footer extends HTMLElement {
     constructor() {
@@ -110,9 +111,9 @@ class Header extends HTMLElement {
                             <div class="rd-navbar-main">
                                 <!-- RD Navbar Nav-->
                                 <ul class="rd-navbar-nav">
-                                    <li class="rd-nav-item active"><a class="rd-nav-link" href="index.html">Accueil</a>
+                                    <li id="accueil" class="rd-nav-item active"><a class="rd-nav-link" href="index.html">Accueil</a>
                                     </li>
-                                    <li class="rd-nav-item"><a class="rd-nav-link" href="about-us.html">A propos</a>
+                                    <li id="a-propos" class="rd-nav-item"><a class="rd-nav-link" href="about-us.html">A propos</a>
                                     </li>
 
                                 </ul>
@@ -201,3 +202,15 @@ class Header extends HTMLElement {
 }
 
 customElements.define('header-component', Header);
+
+
+window.addEventListener("load", function(event) {
+    var pathArray = window.location.pathname.split('/');
+    // console.warn(pathArray.includes("about-us.html"));
+    let about = document.getElementById("a-propos");
+    let home = document.getElementById("accueil");
+    if (pathArray.includes("about-us.html")) {
+        about.classList.add("active");
+        home.classList.remove("active");
+    }
+});
