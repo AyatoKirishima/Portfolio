@@ -8,6 +8,29 @@ $accent3: #A3A64E;
 * Contexts
 */
 
+@media (max-width: 675px) {
+    .mobile-flex {
+        flex: wrap!important;
+        background-color: red;
+    }
+    .sites__content {
+        width: 100%;
+    }
+}
+
+@media (min-width: 676px) {
+    .mobile-flex {
+        display: flex;
+    }
+    .sites__content {
+        width: 50%;
+    }
+}
+
+.text-justify {
+    margin: 2%;
+}
+
 .dark {
     color: $primary!important;
 }
